@@ -1,11 +1,15 @@
-<p>
-  <strong>Name:</strong>
-  <%= @bikeroute.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @bikeroute.description %>
-</p>
-
-<%= link_to 'Back', bikeroutes_path %>
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= @bikeroute.name %></h3>
+      </div>
+      <div class="panel-body">
+        <%= @bikeroute.description %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <%= link_to 'Back', bikeroutes_path %>
+</div>

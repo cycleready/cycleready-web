@@ -1,16 +1,22 @@
 <h1>Listing of Bike Routes</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-
-  <% @bikeroutes.each do |bikeroute| %>
-    <tr>
-      <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
-      <td><%= bikeroute.description %></td>
-
-    </tr>
-  <% end %>
-</table>
+<div class="row">
+  <div class="col-md-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @bikeroutes.each do |bikeroute| %>
+          <tr>
+            <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
+            <td><%= bikeroute.description %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
