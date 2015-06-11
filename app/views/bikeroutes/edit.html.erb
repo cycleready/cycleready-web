@@ -1,0 +1,35 @@
+<h1>Editing bikeroute</h1>
+
+<%= form_for :bikeroute, url: bikeroute_path(@bikeroute), method: :patch do |f| %>
+
+  <% if @bikeroute.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@bikeroute.errors.count, "error") %> prohibited
+        this bikeroute from being saved:
+      </h2>
+      <ul>
+        <% @bikeroute.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Back', bikeroutes_path %>

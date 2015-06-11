@@ -1,0 +1,19 @@
+<h1>Listing of Bikeroutes</h1>
+
+<%= link_to 'New Route', new_bikeroute_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @bikeroutes.each do |bikeroute| %>
+    <tr>
+      <td><%= bikeroute.title %></td>
+      <td><%= bikeroute.text %></td>
+      <td><%= link_to 'Show', bikeroute_path(bikeroute) %></td>
+      <td><%= link_to 'Edit', edit_bikeroute_path(bikeroute) %></td>
+    </tr>
+  <% end %>
+</table>
