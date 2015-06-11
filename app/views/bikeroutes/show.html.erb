@@ -1,12 +1,12 @@
 <p>
-  <strong>Title:</strong>
-  <%= @bikeroute.title %>
+  <strong>Name:</strong>
+  <%= @bikeroute.name %>
 </p>
 
 <p>
-  <strong>Text:</strong>
-  <%= @bikeroute.text %>
+  <strong>Description:</strong>
+  <%= @bikeroute.description %>
 </p>
 
-<%= link_to 'Back', bikeroute_path %>
+<%= link_to 'Back', bikeroutes_path %>
 <%= link_to 'Edit', edit_bikeroute_path(@bikeroute) %>

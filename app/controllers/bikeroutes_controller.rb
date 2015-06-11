@@ -35,9 +35,16 @@ class BikeroutesController < ApplicationController
     end
   end
 
+  def destroy
+    @bikeroute = Bikeroute.find(params[:id])
+    @bikeroute.destroy
+
+    redirect_to bikeroutes_path
+  end
+
   private
     def bikeroute_params
-      params.require(:bikeroute).permit(:title, :text)
+      params.require(:bikeroute).permit(:name, :description)
     end
 
 end

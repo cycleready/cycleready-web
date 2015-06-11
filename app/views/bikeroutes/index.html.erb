@@ -4,16 +4,19 @@
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th>Name</th>
+    <th>Description</th>
   </tr>
 
   <% @bikeroutes.each do |bikeroute| %>
     <tr>
-      <td><%= bikeroute.title %></td>
-      <td><%= bikeroute.text %></td>
+      <td><%= bikeroute.name %></td>
+      <td><%= bikeroute.description %></td>
       <td><%= link_to 'Show', bikeroute_path(bikeroute) %></td>
       <td><%= link_to 'Edit', edit_bikeroute_path(bikeroute) %></td>
+      <td><%= link_to 'Destroy', bikeroute_path(bikeroute),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
