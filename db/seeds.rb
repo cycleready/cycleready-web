@@ -9,18 +9,30 @@
 routes = Bikeroute.create([
   {
     name: 'The Wiggle',
-    description: 'The best way west'
+    description: 'The best way west',
+    lane_type: 'Sharrows',
+    grade: '2',
+    distance: '0.7'
   },
   {
     name: 'Market Street',
-    description: 'Castro to the Ferry Building'
+    description: 'Castro to the Ferry Building',
+    lane_type: 'Dedicated Lane',
+    grade: '1',
+    distance: '3'
   },
   {
     name: 'The Embarcadero',
-    description: 'Ferry Building to Pier 39'
+    description: 'Ferry Building to Pier 39',
+    lane_type: 'Separated Lane',
+    grade: '0',
+    distance: '2'
   },
   {
     name: 'The Panhandle',
-    description: 'Haight to Golden Gate Park'
+    description: 'Haight to Golden Gate Park',
+    lane_type: 'Bike Path',
+    grade: '3',
+    distance: '1'
   }
 ])
