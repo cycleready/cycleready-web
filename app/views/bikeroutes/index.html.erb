@@ -1,6 +1,4 @@
-<h1>Listing of Bikeroutes</h1>
-
-<%= link_to 'New Route', new_bikeroute_path %>
+<h1>Listing of Bike Routes</h1>
 
 <table>
   <tr>
@@ -10,13 +8,9 @@
 
   <% @bikeroutes.each do |bikeroute| %>
     <tr>
-      <td><%= bikeroute.name %></td>
+      <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
       <td><%= bikeroute.description %></td>
-      <td><%= link_to 'Show', bikeroute_path(bikeroute) %></td>
-      <td><%= link_to 'Edit', edit_bikeroute_path(bikeroute) %></td>
-      <td><%= link_to 'Destroy', bikeroute_path(bikeroute),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+
     </tr>
   <% end %>
 </table>
