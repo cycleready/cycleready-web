@@ -84,4 +84,16 @@ hoods = Neighborhood.create([
   }
   ])
 
-#routes[0].neighborhoods << hoods[2]
+routes[0].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
+routes[0].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Tenderloin')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Union Square')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Civic Center')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'SOMA')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Financial District')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Embarcadero')
+routes[2].neighborhoods << Neighborhood.find_by( name: 'Embarcadero')
+routes[2].neighborhoods << Neighborhood.find_by( name: 'Financial District')
+routes[3].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+routes[3].neighborhoods << Neighborhood.find_by( name: 'Upper Haight')
+routes[3].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')

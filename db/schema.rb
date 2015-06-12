@@ -25,8 +25,11 @@ ActiveRecord::Schema.define(version: 20150612192242) do
 
   create_table "bikeroutes_neighborhoods", id: false, force: :cascade do |t|
     t.integer "bikeroute_id"
-    t.integer "neighborhod_id"
+    t.integer "neighborhood_id"
   end
+
+  add_index "bikeroutes_neighborhoods", ["bikeroute_id"], name: "index_bikeroutes_neighborhoods_on_bikeroute_id"
+  add_index "bikeroutes_neighborhoods", ["neighborhood_id"], name: "index_bikeroutes_neighborhoods_on_neighborhood_id"
 
   create_table "neighborhoods", force: :cascade do |t|
     t.string   "name"
