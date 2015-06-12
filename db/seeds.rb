@@ -36,3 +36,64 @@ routes = Bikeroute.create([
     distance: '1'
   }
 ])
+
+hoods = Neighborhood.create([
+  {
+    name: 'Tenderloin',
+    map: 'route/to/tenderloin.map'
+  },
+  {
+    name: 'Mission',
+    map: 'route/to/mission.map'
+  },
+  {
+    name: 'Alamo Square',
+    map: 'route/to/alamosquare.map'
+  },
+  {
+    name: 'Union Square',
+    map: 'route/to/unionsquare.map'
+  },
+  {
+    name: 'Civic Center',
+    map: 'route/to/civiccenter.map'
+  },
+  {
+    name: 'Upper Haight',
+    map: 'route/to/upperhaight.map'
+  },
+  {
+    name: 'Panhandle',
+    map: 'route/to/panhandle.map'
+  },
+  {
+    name: 'Castro',
+    map: 'route/to/castro.map'
+  },
+  {
+    name: 'SOMA',
+    map: 'route/to/soma.map'
+  },
+  {
+    name: 'Financial District',
+    map: 'route/to/financialdistrict.map'
+  },
+  {
+    name: 'Embarcadero',
+    map: 'route/to/embarcadero.map'
+  }
+  ])
+
+routes[0].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
+routes[0].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Tenderloin')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Union Square')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Civic Center')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'SOMA')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Financial District')
+routes[1].neighborhoods << Neighborhood.find_by( name: 'Embarcadero')
+routes[2].neighborhoods << Neighborhood.find_by( name: 'Embarcadero')
+routes[2].neighborhoods << Neighborhood.find_by( name: 'Financial District')
+routes[3].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+routes[3].neighborhoods << Neighborhood.find_by( name: 'Upper Haight')
+routes[3].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-2">
+
+  </div>
+
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= @neighborhood.name %></h3>
+      </div>
+      <div class="panel-body">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Bike route
+              </th>
+              <th>
+                Description
+              </th>
+            </tr>
+          </thead>
+
+        <% @neighborhood.bikeroutes.each do |bikeroute| %>
+          <tr>
+            <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
+            <td><%= bikeroute.description %></td>
+          </tr>
+        <% end %>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-2">
+
+  </div>
+</div>
+<div class="row">
+  <%= link_to 'Back', neighborhoods_path %>
+</div>

@@ -16,6 +16,13 @@
         Elevation change: <%= @bikeroute.grade %>
         <hr />
         <%= @bikeroute.distance %> Miles
+        <hr />
+        <h4>Neighborhoods this route goes through</h4>
+        <hr />
+        <% @bikeroute.neighborhoods.each do |neighborhood| %>
+          <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
+          <hr />
+        <% end %>
       </div>
     </div>
   </div>
