@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150611200139) do
+ActiveRecord::Schema.define(version: 20150612192242) do
 
   create_table "bikeroutes", force: :cascade do |t|
     t.string   "name"
@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(version: 20150611200139) do
     t.string   "lane_type"
     t.integer  "grade"
     t.decimal  "distance"
+  end
+
+  create_table "bikeroutes_neighborhoods", id: false, force: :cascade do |t|
+    t.integer "bikeroute_id"
+    t.integer "neighborhod_id"
+  end
+
+  create_table "neighborhoods", force: :cascade do |t|
+    t.string   "name"
+    t.string   "map"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

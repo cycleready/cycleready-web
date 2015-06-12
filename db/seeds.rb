@@ -36,3 +36,52 @@ routes = Bikeroute.create([
     distance: '1'
   }
 ])
+
+hoods = Neighborhood.create([
+  {
+    name: 'Tenderloin',
+    map: 'route/to/tenderloin.map'
+  },
+  {
+    name: 'Mission',
+    map: 'route/to/mission.map'
+  },
+  {
+    name: 'Alamo Square',
+    map: 'route/to/alamosquare.map'
+  },
+  {
+    name: 'Union Square',
+    map: 'route/to/unionsquare.map'
+  },
+  {
+    name: 'Civic Center',
+    map: 'route/to/civiccenter.map'
+  },
+  {
+    name: 'Upper Haight',
+    map: 'route/to/upperhaight.map'
+  },
+  {
+    name: 'Panhandle',
+    map: 'route/to/panhandle.map'
+  },
+  {
+    name: 'Castro',
+    map: 'route/to/castro.map'
+  },
+  {
+    name: 'SOMA',
+    map: 'route/to/soma.map'
+  },
+  {
+    name: 'Financial District',
+    map: 'route/to/financialdistrict.map'
+  },
+  {
+    name: 'Embarcadero',
+    map: 'route/to/embarcadero.map'
+  }
+  ])
+
+#routes[0].neighborhoods << hoods[2]

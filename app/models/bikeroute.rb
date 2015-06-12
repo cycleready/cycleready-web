@@ -1,4 +1,4 @@
 class Bikeroute < ActiveRecord::Base
-  validates :name, presence: true,
-                      length: { minimum: 5 }
+  has_and_belongs_to_many :neighborhoods
+  validates :name, presence: true
 end
