@@ -28,7 +28,7 @@
               <% @neighborhood.bikeroutes.each do |bikeroute| %>
               <tr>
                 <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
-                <td><%= bikeroute.description %></td>
+                <td><%= bikeroute.description[0..50] + '...' %></td>
               </tr>
               <% end %>
             </table>
