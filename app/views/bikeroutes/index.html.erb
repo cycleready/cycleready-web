@@ -20,7 +20,7 @@
               <td><%= bikeroute.description %></td>
               <td>
                 <% bikeroute.neighborhoods.each do |neighborhood| %>
-                  <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>,
+                  <%= link_to neighborhood.name, neighborhood_path(neighborhood) %><%= "," unless neighborhood == bikeroute.neighborhoods.last %>
                 <% end %>
               </td>
             </tr>
