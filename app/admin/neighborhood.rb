@@ -12,7 +12,7 @@ ActiveAdmin.register Neighborhood do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-  permit_params :name, :map, bikeroutes: [:id, :name]
+  permit_params :name, :map, :about, bikeroutes: [:id, :name]
 
   index do
     column :name
@@ -28,6 +28,7 @@ ActiveAdmin.register Neighborhood do
     attributes_table do
       row :name
       row :map
+      row :about
       row :bikeroutes do |neighborhood|
         neighborhood.bikeroutes.map{ |bikeroute| bikeroute.name }.join(', ')
       end
@@ -40,6 +41,7 @@ ActiveAdmin.register Neighborhood do
     f.inputs "Route Details" do
       f.input :name
       f.input :map
+      f.input :about
       f.input :bikeroutes, :as => :check_boxes
     end
     f.actions
