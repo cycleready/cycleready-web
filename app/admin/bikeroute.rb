@@ -13,5 +13,19 @@ ActiveAdmin.register Bikeroute do
 #   permitted
 # end
 
+  permit_params :name, :description, :lane_type, :grade, :distance, neighborhoods: [:id, :name]
+
+  index do
+    column :name
+    column :description
+    column :lane_type
+    column :grade
+    column :distance
+    column :neighborhoods do |bikeroute|
+      bikeroute.neighborhoods.map{ |neighborhood| neighborhood.name }.join(', ')
+    end
+    actions
+  end
+
 
 end
