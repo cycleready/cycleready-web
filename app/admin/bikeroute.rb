@@ -17,7 +17,6 @@ ActiveAdmin.register Bikeroute do
 
   index do
     column :name
-    column :description
     column :lane_type
     column :grade
     column :distance
