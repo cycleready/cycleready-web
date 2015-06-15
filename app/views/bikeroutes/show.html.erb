@@ -9,20 +9,43 @@
         <h3 class="panel-title"><%= @bikeroute.name %></h3>
       </div>
       <div class="panel-body">
+
         <%= @bikeroute.description %>
+
+        <hr>
+        About this Route:
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                Lane Type:
+              </td>
+              <td>
+                <%= @bikeroute.lane_type %>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Elevation:
+              </td>
+              <td>
+                <%= @bikeroute.grade %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
         <hr />
-        Lane Type: <%= @bikeroute.lane_type %>
-        <hr />
-        Elevation change: <%= @bikeroute.grade %>
-        <hr />
-        <%= @bikeroute.distance %> Miles
-        <hr />
-        <h4>Neighborhoods this route goes through</h4>
-        <hr />
-        <% @bikeroute.neighborhoods.each do |neighborhood| %>
-          <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
-          <hr />
-        <% end %>
+
+        <h5>Neighborhoods this route goes through</h5>
+        <ul class="list-unstyled">
+          <% @bikeroute.neighborhoods.each do |neighborhood| %>
+            <li>
+              <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
+            </li>
+          <% end %>
+        </ul>
+
       </div>
     </div>
   </div>

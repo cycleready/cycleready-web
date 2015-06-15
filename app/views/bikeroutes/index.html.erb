@@ -1,22 +1,33 @@
-<h1>Listing of Bike Routes</h1>
-
 <div class="row">
-  <div class="col-md-6">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @bikeroutes.each do |bikeroute| %>
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">All Bike Routes</h3>
+      </div>
+      <table class="table">
+        <thead>
           <tr>
-            <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
-            <td><%= bikeroute.description %></td>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Neighborhoods</th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          <% @bikeroutes.each do |bikeroute| %>
+            <tr>
+              <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
+              <td><%= bikeroute.description %></td>
+              <td>
+                <% bikeroute.neighborhoods.each do |neighborhood| %>
+                  <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>,
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
+  <div class="col-md-2"></div>
 </div>
