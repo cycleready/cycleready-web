@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150618055430) do
+ActiveRecord::Schema.define(version: 20150618193137) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -49,13 +49,14 @@ ActiveRecord::Schema.define(version: 20150618055430) do
   create_table "bikeroutes", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.string   "lane_type"
     t.integer  "grade"
     t.decimal  "distance"
     t.string   "map"
     t.string   "twitter_tag"
+    t.text     "twitter_search"
   end
 
   create_table "bikeroutes_neighborhoods", id: false, force: :cascade do |t|

@@ -60,6 +60,10 @@
                 href="https://twitter.com/intent/tweet?button_hashtag=<%= @bikeroute.twitter_tag %>">
               Tweet #<%= @bikeroute.twitter_tag %></a>
             <% end %>
+
+            <% if @bikeroute.twitter_search.present? %>
+              <%= @bikeroute.twitter_search.html_safe %>
+            <% end %>
           </div>
         </div>
       </div>
@@ -70,4 +74,4 @@
 <div class="row">
   <%= link_to 'Back', bikeroutes_path %>
 </div>
-<%= render 'twitter' %>
+<%= render 'layouts/twitter' %>
