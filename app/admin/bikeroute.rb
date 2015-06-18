@@ -13,7 +13,7 @@ ActiveAdmin.register Bikeroute do
 #   permitted
 # end
 
-  permit_params :name, :description, :lane_type, :grade, :distance, :map, neighborhoods: [:id, :name]
+  permit_params :name, :description, :lane_type, :grade, :distance, :map, :twitter_tag, neighborhoods: [:id, :name]
 
   index do
     column :name
@@ -51,6 +51,7 @@ ActiveAdmin.register Bikeroute do
       f.input :grade
       f.input :map
       f.input :distance
+      f.input :twitter_tag
       f.input :neighborhoods, :as => :check_boxes
     end
     f.actions

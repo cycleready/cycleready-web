@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150615224240) do
+ActiveRecord::Schema.define(version: 20150618055430) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20150615224240) do
     t.integer  "grade"
     t.decimal  "distance"
     t.string   "map"
+    t.string   "twitter_tag"
   end
 
   create_table "bikeroutes_neighborhoods", id: false, force: :cascade do |t|

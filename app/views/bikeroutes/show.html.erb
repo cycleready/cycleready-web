@@ -52,6 +52,16 @@
             </ul>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <% if @bikeroute.twitter_tag.present? %>
+              Have an update about this route? <br>
+              <a class="twitter-hashtag-button"
+                href="https://twitter.com/intent/tweet?button_hashtag=<%= @bikeroute.twitter_tag %>">
+              Tweet #<%= @bikeroute.twitter_tag %></a>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -60,3 +70,4 @@
 <div class="row">
   <%= link_to 'Back', bikeroutes_path %>
 </div>
+<%= render 'twitter' %>
