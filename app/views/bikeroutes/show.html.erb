@@ -49,8 +49,8 @@
             <div class="list-group">
               <% @bikeroute.neighborhoods.each do |neighborhood| %>
                 <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
+                  <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
                   <%= neighborhood.name %>
-                  <span class="badge"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span></span>
                 <% end %>
               <% end %>
             </div>
