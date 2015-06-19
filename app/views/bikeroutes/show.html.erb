@@ -1,59 +1,77 @@
 <div class="row">
-  <div class="col-md-2">
-
-  </div>
-
+  <div class="col-md-2"></div>
   <div class="col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title"><%= @bikeroute.name %></h3>
       </div>
       <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="<%= @bikeroute.map %>" alt="" class="img-responsive" />
+          </div>
+        </div>
 
-        <%= @bikeroute.description %>
+        <div class="row">
+          <div class="col-md-12"><%= @bikeroute.description %></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            About this Route:
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    Lane Type:
+                  </td>
+                  <td>
+                    <%= @bikeroute.lane_type %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Elevation:
+                  </td>
+                  <td>
+                    <%= @bikeroute.grade %>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Neighborhoods this route goes through</h5>
+            <ul class="list-unstyled">
+              <% @bikeroute.neighborhoods.each do |neighborhood| %>
+              <li>
+                <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
+              </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <% if @bikeroute.twitter_tag.present? %>
+              Have an update about this route? <br>
+              <a class="twitter-hashtag-button"
+                href="https://twitter.com/intent/tweet?button_hashtag=<%= @bikeroute.twitter_tag %>">
+              Tweet #<%= @bikeroute.twitter_tag %></a>
+            <% end %>
 
-        <hr>
-        About this Route:
-        <table class="table">
-          <tbody>
-            <tr>
-              <td>
-                Lane Type:
-              </td>
-              <td>
-                <%= @bikeroute.lane_type %>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Elevation:
-              </td>
-              <td>
-                <%= @bikeroute.grade %>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <hr />
-
-        <h5>Neighborhoods this route goes through</h5>
-        <ul class="list-unstyled">
-          <% @bikeroute.neighborhoods.each do |neighborhood| %>
-            <li>
-              <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
-            </li>
-          <% end %>
-        </ul>
-
+            <% if @bikeroute.twitter_search.present? %>
+              <%= @bikeroute.twitter_search.html_safe %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="col-md-2">
-
-  </div>
+  <div class="col-md-2"></div>
 </div>
 <div class="row">
   <%= link_to 'Back', bikeroutes_path %>
 </div>
+<%= render 'layouts/twitter' %>
