@@ -3,9 +3,10 @@
   <div class="col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= @bikeroute.name %></h3>
+        <h2 class="panel-title"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> <%= @bikeroute.name %></h2>
       </div>
       <div class="panel-body">
+
         <div class="row">
           <div class="col-md-12">
             <img src="<%= @bikeroute.map %>" alt="" class="img-responsive" />
@@ -15,6 +16,7 @@
         <div class="row">
           <div class="col-md-12"><%= @bikeroute.description %></div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             About this Route:
@@ -40,18 +42,21 @@
             </table>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             <h5>Neighborhoods this route goes through</h5>
-            <ul class="list-unstyled">
+            <div class="list-group">
               <% @bikeroute.neighborhoods.each do |neighborhood| %>
-              <li>
-                <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
-              </li>
+                <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
+                  <%= neighborhood.name %>
+                  <span class="badge"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span></span>
+                <% end %>
               <% end %>
-            </ul>
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             <% if @bikeroute.twitter_tag.present? %>
@@ -66,6 +71,7 @@
             <% end %>
           </div>
         </div>
+
       </div>
     </div>
   </div>
