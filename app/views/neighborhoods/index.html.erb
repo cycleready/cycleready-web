@@ -1,3 +1,4 @@
+<% provide(:title, "All Neighborhoods") %>
 <p id="notice"><%= notice %></p>
 
 <div class="row">
@@ -7,26 +8,21 @@
       <div class="panel-heading">
         <h3 class="panel-title">Neighborhoods:</h3>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Routes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @neighborhoods.each do |neighborhood| %>
-            <tr>
-              <td><%= link_to neighborhood.name, neighborhood %></td>
-              <td>
-                <% neighborhood.bikeroutes.each do |bikeroute| %>
-                  <%= link_to bikeroute.name, bikeroute_path(bikeroute) %><%= "," unless bikeroute == neighborhood.bikeroutes.last %>
-                <% end %>
-              </td>
-            </tr>
+
+      <div class="list-group">
+        <% @neighborhoods.each do |neighborhood| %>
+
+            <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
+            <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%=  neighborhood.name %></h4>
+            <p class="list-group-item-text">
+              <% neighborhood.bikeroutes.each do |bikeroute| %>
+                <%= bikeroute.name %><%= "," unless bikeroute == neighborhood.bikeroutes.last %>
+              <% end %>
+            </p>
           <% end %>
-        </tbody>
-      </table>
+        <% end %>
+      </div>
+
     </div>
   </div>
   <div class="col-md-2"></div>
