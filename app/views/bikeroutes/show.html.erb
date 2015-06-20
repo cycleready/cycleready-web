@@ -1,11 +1,13 @@
+<% provide(:title, @bikeroute.name ) %>
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
+  <div class="col-md-2 col-xs-0"></div>
+  <div class="col-md-8 col-xs-12">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= @bikeroute.name %></h3>
+        <h2 class="panel-title"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> <%= @bikeroute.name %></h2>
       </div>
       <div class="panel-body">
+
         <div class="row">
           <div class="col-md-12">
             <img src="<%= @bikeroute.map %>" alt="" class="img-responsive" />
@@ -13,45 +15,43 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12"><%= @bikeroute.description %></div>
+          <div class="col-md-12">
+            <p><%= @bikeroute.description %></p>
+          </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
-            About this Route:
+            <p>About this Route:</p>
             <table class="table">
               <tbody>
                 <tr>
-                  <td>
-                    Lane Type:
-                  </td>
-                  <td>
-                    <%= @bikeroute.lane_type %>
-                  </td>
+                  <td>Lane Type:</td>
+                  <td><%= @bikeroute.lane_type %></td>
                 </tr>
                 <tr>
-                  <td>
-                    Elevation:
-                  </td>
-                  <td>
-                    <%= @bikeroute.grade %>
-                  </td>
+                  <td>Elevation:</td>
+                  <td><%= @bikeroute.grade %></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             <h5>Neighborhoods this route goes through</h5>
-            <ul class="list-unstyled">
+            <div class="list-group">
               <% @bikeroute.neighborhoods.each do |neighborhood| %>
-              <li>
-                <%= link_to neighborhood.name, neighborhood_path(neighborhood) %>
-              </li>
+                <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
+                  <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+                  <%= neighborhood.name %>
+                <% end %>
               <% end %>
-            </ul>
+            </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             <% if @bikeroute.twitter_tag.present? %>
@@ -66,12 +66,16 @@
             <% end %>
           </div>
         </div>
+
       </div>
+
+      <div class="panel-footer">
+        <%= link_to 'Back', bikeroutes_path, :class=>"btn btn-default" %>
+      </div>
+
     </div>
   </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-2 col-xs-0"></div>
 </div>
-<div class="row">
-  <%= link_to 'Back', bikeroutes_path %>
-</div>
+
 <%= render 'layouts/twitter' %>
