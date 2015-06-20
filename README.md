@@ -6,5 +6,13 @@ check out the live version at [cycleready.herokuapp.com](https://cycleready.hero
 Lorem Ipsum from [VeloIpsum](http://rouleurderby.com/vi)
 
 ##Helping Out
-We're trying to use the [git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) conventions.
-We're a project of the Code for America [San Francisco Brigade](https://github.com/sfbrigade).  Go ahead and make a fork and hack away!
+This is a project of the Code for America [San Francisco Brigade](https://github.com/sfbrigade).  Go ahead and make a fork and hack away!
+
+We're trying to use the [git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) conventions.  Branch your feature from `develop`, as the `master` branch is always deployable.
+
+###Needed Areas of Expertise
+* maps
+* bootstrap (especially mobile-oriented)
+* content writers
+* artists
+* bikers around SF
