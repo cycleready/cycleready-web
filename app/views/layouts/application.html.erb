@@ -27,10 +27,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><%= link_to "Home", root_path %></li>
-                  <li><%= link_to "Help", help_path %></li>
-                  <li><%= link_to "Routes", controller: 'bikeroutes' %></li>
-                  <li><%= link_to "Neighborhoods",  controller: 'neighborhoods' %></li>
+                  <li class="<%= is_active?(root_path) %>"><%= link_to "Home", root_path %></li>
+                  <li class="<%= is_active?(help_path) %>"><%= link_to "Help", help_path %></li>
+                  <li class="<%= is_active?(bikeroutes_path) %>"><%= link_to "Routes", controller: 'bikeroutes' %></li>
+                  <li class="<%= is_active?(neighborhoods_path) %>"><%= link_to "Neighborhoods",  controller: 'neighborhoods' %></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -1,5 +1,7 @@
 <% provide(:title, "All Neighborhoods") %>
 <p id="notice"><%= notice %></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js" charset="utf-8"></script>
 
 <div class="row">
   <div class="col-md-2"></div>
@@ -8,22 +10,35 @@
       <div class="panel-heading">
         <h3 class="panel-title">Neighborhoods:</h3>
       </div>
+      <div class="panel-body">
 
-      <div class="list-group">
-        <% @neighborhoods.each do |neighborhood| %>
+        <div id="map_container"></div>
+        <div id="selected-title">San Francisco</div>
+        <%= javascript_include_tag 'mapping', 'data-turbolinks-track' => true %>
 
-            <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
-            <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%=  neighborhood.name %></h4>
-            <p class="list-group-item-text">
-              <% neighborhood.bikeroutes.each do |bikeroute| %>
-                <%= bikeroute.name %><%= "," unless bikeroute == neighborhood.bikeroutes.last %>
-              <% end %>
-            </p>
+        <div class="list-group">
+          <% @neighborhoods.each do |neighborhood| %>
+
+              <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
+              <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%=  neighborhood.name %></h4>
+              <p class="list-group-item-text">
+                <% neighborhood.bikeroutes.each do |bikeroute| %>
+                  <%= bikeroute.name %><%= "," unless bikeroute == neighborhood.bikeroutes.last %>
+                <% end %>
+              </p>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
-
     </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    Neighborhood Data Provided By: <a href="http://www.sfgov.org">City and County of San Francisco Planning Department</a>
   </div>
   <div class="col-md-2"></div>
 </div>

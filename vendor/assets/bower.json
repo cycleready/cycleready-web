@@ -1,6 +1,8 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
-    "bootstrap-sass": "latest"
+    "bootstrap-sass": "latest",
+    "d3": "latest",
+    "topojson": "latest"
   }
 }
