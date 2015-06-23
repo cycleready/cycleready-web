@@ -9,7 +9,7 @@ Bikeroute.delete_all
 routes = Bikeroute.create([
   {
     name: 'The Wiggle',
-    description: 'The best way west',
+    description: "Lorem ipsum de wolf vos col de perjuret feed zone randonneur, forest of arenberg hinault operacion puerto an festina. Soigneur echelon, stijn devolder mmmaiko nokere koerse ventoux ghent arrivere, cutters danseuse van steenbergen garin! Bromont res firma mitescere nescit van summeren, ombregt rouleur derby cycles goff venga venga venga omloop het volk on the rivet.\nTopsport vlaanderen van steenbergen once! Pedal bettini taaienberg schleck, bosberg monte paschi eroica echelon play rouleur derby paris-roubaix virenque, muur belleville. Ronde van belgie horizontally stiff but vertically compliant bartali longo bianchi, petacchi vuelta a espana berg ter stene de vlaeminck bronzini vendee. Kuurne-brussels-kuurne alpe d\'huez indurain cog petacchi omnium.",
     lane_type: 'Sharrows',
     grade: '2',
     distance: '0.7',
