@@ -36,7 +36,7 @@ function renderNeighborhoods(){
       .selectAll(".neighborhood")
         .data(topojson.feature(sf, sf.objects.SFFind_Neighborhoods).features)
       .enter().append('a')
-        .attr("xlink:href",function(d) { return d.properties.LINK || '#'; }) //change property here to change link
+        .attr("xlink:href",function(d) { return 'neighborhoods/' + d.properties.nId || '#'; }) //change property here to change link
       .append("path")
         .attr("class", "neighborhood")
         .on("mouseover", function(d) { return setTitle(d.properties.name); })
