@@ -16,17 +16,21 @@
 
         <div class="row">
           <div class="col-md-12">
-            <h5>Bike Routes in this Neighborhood:</h5>
-            <div class="list-group">
-              <% @neighborhood.bikeroutes.each do |bikeroute| %>
-                <%= link_to bikeroute_path(bikeroute), :class=>'list-group-item' do %>
-                  <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> <%= bikeroute.name %></h4>
-                  <p class="list-group-item-text">
-                    <%= bikeroute.description[0..24] + '...' %>
-                  </p>
+            <% if @neighborhood.bikeroutes.presence %>
+              <h5>Bike Routes in this Neighborhood:</h5>
+              <div class="list-group">
+                <% @neighborhood.bikeroutes.each do |bikeroute| %>
+                  <%= link_to bikeroute_path(bikeroute), :class=>'list-group-item' do %>
+                    <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> <%= bikeroute.name %></h4>
+                    <p class="list-group-item-text">
+                      <%= bikeroute.description[0..24] + '...' %>
+                    </p>
+                  <% end %>
                 <% end %>
-              <% end %>
-            </div>
+              </div>
+            <% else %>
+            <h5>No bike routes in the system yet</h5>
+            <% end %>
           </div>
         </div>
 
