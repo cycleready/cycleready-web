@@ -12,7 +12,8 @@ ActiveAdmin.register Neighborhood do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-  permit_params :name, :map, :about, :slug, bikeroutes: [:id, :name]
+
+  permit_params :name, :map, :about, :slug, bikeroute_ids: [], bikeroutes: [:id, :name]
 
   around_filter do |controller, action|
     Neighborhood.class_eval do
@@ -59,6 +60,7 @@ ActiveAdmin.register Neighborhood do
   end
 
   form do |f|
+
     f.inputs "Route Details" do
       f.input :name
       f.input :map
