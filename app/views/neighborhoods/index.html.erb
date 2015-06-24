@@ -18,7 +18,7 @@
 
         <div class="list-group">
           <% @neighborhoods.each do |neighborhood| %>
-
+            <% if neighborhood.bikeroutes.presence %>
               <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
               <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%=  neighborhood.name %></h4>
               <p class="list-group-item-text">
@@ -26,6 +26,7 @@
                   <%= bikeroute.name %><%= "," unless bikeroute == neighborhood.bikeroutes.last %>
                 <% end %>
               </p>
+              <% end %>
             <% end %>
           <% end %>
         </div>
