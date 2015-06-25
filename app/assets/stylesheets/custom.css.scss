@@ -10,7 +10,16 @@ body {
 .neighborhood:hover {
    fill: rgba(247, 91, 68, 0.5);
 }
+
 #neighborhood-map{
   height: auto;
   width: 100%;
+}
+
+#selected-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5%;
+  background-color: blue;
+  color: white;
 }
