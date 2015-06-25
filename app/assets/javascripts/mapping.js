@@ -76,10 +76,4 @@ function setTitle(newTitle){
   var infoRoutes = infoCard.children().children('p').text()
   d3.select("#selected-title-routes").text(infoRoutes);
 
-
-  console.log(parsedName);
-  console.log(infoRoutes);
-
-  infoCard.css('background-color', 'red');
-
 }
