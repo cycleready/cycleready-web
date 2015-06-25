@@ -1,5 +1,5 @@
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* move neighborhood styles to stylesheet dedicated to mapping*/
@@ -8,7 +8,7 @@ body {
   stroke: #38383a;
 }
 .neighborhood:hover {
-   fill: rgba(247, 91, 68, 0.5);
+ fill: rgba(247, 91, 68, 0.5);
 }
 
 #neighborhood-map{
@@ -16,11 +16,25 @@ body {
   width: 100%;
 }
 
+#neighborhood-info {
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
 #selected-title {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 5%;
+  margin: 2%;
+  border-radius: 10px;
   background-color: blue;
   color: white;
-  border-radius: 10px;
+}
+
+#selected-title-routes {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: -3%;
+  padding: 20px;
+  color: darkgrey;
 }
