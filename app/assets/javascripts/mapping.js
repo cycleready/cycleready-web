@@ -71,4 +71,6 @@ function resize() {
 
 function setTitle(newTitle){
   d3.select("#selected-title").text(newTitle);
+  console.log(newTitle);
+  $('#' + newTitle.replace(/ /g,'').toLowerCase());
 }

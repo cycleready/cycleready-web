@@ -19,6 +19,7 @@
         <div class="list-group">
           <% @neighborhoods.each do |neighborhood| %>
             <% if neighborhood.bikeroutes.presence %>
+            <div id='<%= neighborhood.name.delete(' ').downcase %>'>
               <%= link_to neighborhood_path(neighborhood), :class=>'list-group-item' do %>
               <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%=  neighborhood.name %></h4>
               <p class="list-group-item-text">
@@ -27,6 +28,7 @@
                 <% end %>
               </p>
               <% end %>
+            </div>
             <% end %>
           <% end %>
         </div>
