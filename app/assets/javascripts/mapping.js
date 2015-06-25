@@ -71,6 +71,12 @@ function resize() {
 
 function setTitle(newTitle){
   d3.select("#selected-title").text(newTitle);
-  console.log(newTitle);
-  $('#' + newTitle.replace(/ /g,'').toLowerCase());
+  var parsedName = newTitle.replace(/ /g,'').toLowerCase()
+  var infoCard = $('#' + parsedName);
+
+  console.log(parsedName);
+  console.log(infoCard);
+
+  infoCard.css('background-color', 'red');
+
 }
