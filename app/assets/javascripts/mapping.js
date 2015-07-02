@@ -71,4 +71,9 @@ function resize() {
 
 function setTitle(newTitle){
   d3.select("#selected-title").text(newTitle);
+  var parsedName = newTitle.replace(/ /g,'').toLowerCase();
+  var infoCard = $('#' + parsedName);
+  var infoRoutes = infoCard.children().children('p').text()
+  d3.select("#selected-title-routes").text(infoRoutes);
+
 }
