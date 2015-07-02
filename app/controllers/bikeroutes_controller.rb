@@ -1,10 +1,14 @@
 class BikeroutesController < ApplicationController
+  require 'dotenv'
+
   def index
     @bikeroutes = Bikeroute.all
   end
 
   def show
     @bikeroute = Bikeroute.find(params[:id])
+    @mapbox_account = ENV[MAPBOX_ACCOUNT]
+    @mapbox_apikey = ENV[MAPBOX_KEY]
   end
 
   def new
@@ -43,8 +47,8 @@ class BikeroutesController < ApplicationController
   end
 
   private
-    def bikeroute_params
-      params.require(:bikeroute).permit(:name, :description)
-    end
+  def bikeroute_params
+    params.require(:bikeroute).permit(:name, :description)
+  end
 
 end
