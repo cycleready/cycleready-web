@@ -70,7 +70,7 @@ function resize() {
 }
 
 function setTitle(newTitle){
-  d3.select("#selected-title").text(newTitle);
+  d3.select("#selected-neighborhood").text(newTitle);
   var parsedName = newTitle.replace(/ /g,'').toLowerCase();
   var infoCard = $('#' + parsedName);
   var infoRoutes = infoCard.children().children('p').text()
