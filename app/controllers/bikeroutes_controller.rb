@@ -7,8 +7,8 @@ class BikeroutesController < ApplicationController
 
   def show
     @bikeroute = Bikeroute.find(params[:id])
-    @mapbox_account = ENV[MAPBOX_ACCOUNT]
-    @mapbox_apikey = ENV[MAPBOX_KEY]
+    @mapbox_account = ENV['MAPBOX_ACCOUNT']
+    @mapbox_apikey = ENV['MAPBOX_KEY']
   end
 
   def new
