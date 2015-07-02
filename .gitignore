@@ -17,3 +17,5 @@
 /tmp
 
 /project_notes/*
+
+*.env
