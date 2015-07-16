@@ -70,10 +70,12 @@ function resize() {
 }
 
 function setTitle(newTitle){
-  d3.select("#selected-title").text(newTitle);
+  d3.select("#selected-neighborhood").text(newTitle);
   var parsedName = newTitle.replace(/ /g,'').toLowerCase();
   var infoCard = $('#' + parsedName);
   var infoRoutes = infoCard.children().children('p').text()
-  d3.select("#selected-title-routes").text(infoRoutes);
+  var routeList = d3.select("#selected-title-routes")
+  routeList.text('Routes in this neighborhood: ' + infoRoutes);
+  (infoRoutes.length !== 0) ? routeList.classed('hidden', false) : routeList.classed('hidden', true);
 
 }
