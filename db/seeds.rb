@@ -15,7 +15,7 @@ routes = Bikeroute.create([
     distance: '0.7',
     twitter_tag: 'TheWiggleCRSF',
     twitter_search:'<a class="twitter-timeline" href="https://twitter.com/hashtag/TheWiggleCRSF" data-widget-id="611617017599135744">#TheWiggleCRSF Tweets</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>',
-    map:'https://www.dropbox.com/s/ea274rjll62ky5s/thewiggle.png?raw=1'
+    map:'5449ca9d'
   },
   {
     name: 'Market Street',
@@ -36,7 +36,8 @@ routes = Bikeroute.create([
     description: 'Haight to Golden Gate Park',
     lane_type: 'Bike Path',
     grade: '3',
-    distance: '1'
+    distance: '1',
+    map: 'n9dp95f7'
   }
 ])
 
