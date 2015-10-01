@@ -1,5 +1,7 @@
 class BikeroutesController < ApplicationController
-  require 'dotenv'
+  if Rails.env.development?
+    require 'dotenv'
+  end
 
   def index
     @bikeroutes = Bikeroute.all
