@@ -25,6 +25,13 @@ group :development, :test do
 
 end
 
+group :test do
+  gem 'minitest-reporters',   '1.0.5'
+  gem 'minitest-rails-capybara'
+  gem 'selenium-webdriver'
+  gem 'guard-minitest',       '2.3.1'
+end
+
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
