@@ -49,6 +49,17 @@ body {
   color: #fefdff;
 }
 
+.welcome-title{
+  text-align:center;
+}
+
+.main-image{
+margin-left:27%;
+margin-top:20px;
+}
+
+
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ecf0f1;
