@@ -52,6 +52,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'rails-erd'
+  # fonts for welcome page
+  gem "font-awesome-rails"
 end
 
 group :production do
