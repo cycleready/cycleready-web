@@ -53,6 +53,53 @@ body {
   color: #fefdff;
 }
 
+.welcome-title{
+  text-align:center;
+  font-size:60px;
+  font-weight:200;
+}
+
+sub-title{
+
+}
+
+.main-image{
+margin-left:27%;
+margin-top:20px;
+}
+
+.route-name{
+font-size:30px;
+color:black;
+text-align:center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.route-icon{
+text-align:center;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size:60px;
+}
+
+.wiggle{
+color:yellow;
+}
+
+.market{
+color:gray;
+}
+
+.embarcadaro{
+color:purple;
+}
+
+.pan-handle{
+color:green;
+}
+
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ecf0f1;
