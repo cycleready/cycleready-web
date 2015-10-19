@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'yelp', '~> 2.0', '>= 2.0.6'
+gem 'yelp', '~> 2.0', '>= 2.0.6', require: 'yelp'
 
 # active admin for web interface
 gem 'activeadmin', github: 'activeadmin'
