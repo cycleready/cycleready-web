@@ -5,8 +5,11 @@ class BikeroutesController < ApplicationController
 
   def index
     @bikeroutes = Bikeroute.all
-    @play = Yelp.client.search('San Francisco', { term: 'food' })
+    location = params[:location] || 'San Francisco'
+    interest = params[:interest] || 'Food'
 
+    @somethingplay = Yelp.client.search(location, { term: interest})
+    @play = Yelp.client.search('San Francisco', { term: 'food'})
   end
 
   def show
