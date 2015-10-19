@@ -10,8 +10,18 @@
       <div class="panel-heading">
         <h3 class="panel-title">Neighborhoods:</h3>
       </div>
+      <% @play.businesses.each do |business| %>
+        <div>
+          <p>Store Name: <%= business.name %></p>
+          <p>Rating: <%= business.rating %></p>
+          <ul>
+            <% business.categories.each do |category| %>
+              <li><%= category[0] %></li>
+            <% end %>
+          </ul>
+        </div></br>
+      <% end %>
       <div class="panel-body">
-
         <div id="map_container"></div>
         <div id="neighborhood-info">
           <div id="selected-title">Neighborhood: <span id='selected-neighborhood'>San Francisco</span></div>
