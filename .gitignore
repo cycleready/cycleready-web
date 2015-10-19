@@ -17,5 +17,6 @@
 /tmp
 
 /project_notes/*
-
 *.env
+
+/config/secrets.yml
