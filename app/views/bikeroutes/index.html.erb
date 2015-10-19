@@ -7,6 +7,19 @@
       <div class="panel-heading">
         <h3 class="panel-title">All Bike Routes</h3>
       </div>
+      <% @play.businesses.each do |business| %>
+        <div>
+          <p>Store Name: <%= business.name %></p>
+          <p>Rating: <%= business.rating %></p>
+          <p>Latitude:<%= business.location.coordinate.latitude %></p>
+          <p>Longitude:<%= business.location.coordinate.longitude %></p>
+          <ul>
+            <% business.categories.each do |category| %>
+              <li><%= category[0] %></li>
+            <% end %>
+          </ul>
+        </div></br>
+      <% end %>
       <table class="table">
         <thead>
           <tr>

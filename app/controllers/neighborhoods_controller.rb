@@ -5,7 +5,6 @@ class NeighborhoodsController < ApplicationController
   # GET /neighborhoods.json
   def index
     @neighborhoods = Neighborhood.all
-    @play = Yelp.client.search('San Francisco', { term: 'food' })
   end
 
   # GET /neighborhoods/1
