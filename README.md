@@ -9,7 +9,7 @@ When you first start biking in San Francisco, you probably rely heavily on Googl
 This is a project of the Code for America [San Francisco Brigade](https://github.com/sfbrigade).  Go ahead and make a fork and hack away!
 
 ###Do you know about ... 
-* Ruby on Rails?
+* [Ruby on Rails](http://rubyonrails.org/)?
 * [Bootstrap](http://getbootstrap.com) (especially mobile-oriented)?
 * Maps (especially [Mapbox](http://www.mapbox.com))?
 * Drawing cool artwork?
@@ -29,15 +29,15 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Open a terminal*
 
-*Do you have Ruby?*  Type `$ ruby -v` (omitting the $, that is your prompt). You should see something like: ` ruby 2.1.6p336`  You don't have Ruby? [try following the instructions here](https://www.ruby-lang.org/en/installation/).
+*Do you have Ruby?*  Type `$ ruby -v` (omitting the `$`). You should see something like: ` ruby 2.1.6p336`  Don't have Ruby? [Try following the instructions here](https://www.ruby-lang.org/en/installation/).
 
-*Do you have SQLite3?* Type `$ sqlite3 --version` You should see a string of numbers and letters.  [Don't have SQLite3?](https://www.sqlite.org/).
+*Do you have SQLite3?* Type `$ sqlite3 --version` You should see a string of numbers and letters.  [Don't have SQLite3](https://www.sqlite.org/)?
 
-*Do you already have Rails installed?*  Type `$ rails -v`  If you see something like ` Rails 4.2.1` If you don't, use `$ gem install rails` to install rails.
+*Do you already have Rails installed?*  Type `$ rails -v`  If you see something like ` Rails 4.2.1` If you don't, type `$ gem install rails` to install rails.
 
-*Fork this repo* If you don't already know how to do this, [start with this article](https://help.github.com/articles/set-up-git/).
+*Fork this repo.* If you don't already know how to do this, [start with this article](https://help.github.com/articles/set-up-git/).
 
-*Switch to the `develop` branch* if you're not already on there.
+*Switch to the `develop` branch* if you're not already there.
 
 *Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`
 
