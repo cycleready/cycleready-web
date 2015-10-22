@@ -10,6 +10,6 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
-Rails.application.config.assets.precompile += %w( mapping.js )
+Rails.application.config.assets.precompile += %w( neighborhoodMap.js )
 Rails.application.config.assets.precompile += %w( bikeroutes.js )
 Rails.application.config.assets.precompile += %w( bikeroutes.css )
