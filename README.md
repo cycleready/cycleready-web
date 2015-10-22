@@ -29,7 +29,7 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Open a terminal*
 
-*Do you have Ruby?*  Type `$ ruby -v` (omitting the `$`). You should see something like: ` ruby 2.1.6p336`  Don't have Ruby? [Try following the instructions here](https://www.ruby-lang.org/en/installation/).
+*Do you have Ruby?*  Type `$ ruby -v` (omitting the `$`). You should see something like: ` ruby 2.1.6p336`  Don't have Ruby? [Install using the instructions here](https://www.ruby-lang.org/en/installation/).
 
 *Do you have SQLite3?* Type `$ sqlite3 --version` You should see a string of numbers and letters.  [Don't have SQLite3](https://www.sqlite.org/)?
 
@@ -37,7 +37,7 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Fork this repo.* If you don't already know how to do this, [start with this article](https://help.github.com/articles/set-up-git/).
 
-*Switch to the `develop` branch* if you're not already there.
+*Switch to the `develop` branch* `$ git checkout develop` if you're not already there.
 
 *Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`
 
@@ -50,7 +50,7 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 ####The steps you'll repeat:
 *Open a terminal*
 
-*Go to your local repo* `$ cd my-local-cycleready`
+*Go to your local repo* `$ cd path/to/my/local/cycleready`
 
 *Start the rails server* `$ rails s` 
 
