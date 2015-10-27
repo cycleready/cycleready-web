@@ -6,7 +6,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -23,6 +22,13 @@ group :development, :test do
   gem 'spring'
   gem 'rails-erd'
 
+end
+
+group :test do
+  gem 'minitest-reporters',   '1.0.5'
+  gem 'minitest-rails-capybara'
+  gem 'selenium-webdriver'
+  gem 'guard-minitest',       '2.3.1'
 end
 
 group :production do
