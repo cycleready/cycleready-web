@@ -5,6 +5,7 @@ class BikeroutesController < ApplicationController
 
   def index
     @bikeroutes = Bikeroute.all
+    @yelp_dump = Yelp.client.search('San Francisco', { term: 'food' })
   end
 
   def show
