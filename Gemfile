@@ -14,7 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'friendly_id', '~> 5.1.0'
-gem 'yelp', '~> 2.0', '>= 2.0.6'
+gem 'yelp', '~> 2.0', '>= 2.0.6', require: 'yelp'
 
 group :development, :test do
   gem 'sqlite3'
