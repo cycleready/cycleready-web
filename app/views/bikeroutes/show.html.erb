@@ -1,6 +1,3 @@
-<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
-
 <%= stylesheet_link_tag params[:controller], "data-turbolinks-track" => true %>
 <% provide(:title, @bikeroute.name ) %>
 <div class="row">
@@ -89,7 +86,11 @@
 
 <%= render 'layouts/twitter' %>
 
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+
 <script type="text/javascript">
+(function() {
   var routegeojson = (<%= @bikeroute.geojson.html_safe %>);
   L.mapbox.accessToken = '<%= @mapbox_apikey %>';
   //known issue: on initial load the accesstoken does not always load before the map calls for it.
@@ -109,6 +110,6 @@
     map.setView([layer.feature.centroid[1], layer.feature.centroid[0]], 14 );
     layer.bindPopup(layer.feature.properties.name);
   });
-
+})();
 </script>
 <%# javascript_include_tag params[:controller], "data-turbolinks-track" => true %>
