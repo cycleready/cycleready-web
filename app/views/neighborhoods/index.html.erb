@@ -17,7 +17,7 @@
           <div id="selected-title">Neighborhood: <span id='selected-neighborhood'>San Francisco</span></div>
           <div id='selected-title-routes'></div>
         </div>
-        <%= javascript_include_tag 'mapping', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'neighborhoodMap', 'data-turbolinks-track' => true %>
 
         <div class="list-group">
           <% @neighborhoods.each do |neighborhood| %>

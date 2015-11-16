@@ -231,6 +231,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  json (= 1.8.3)
   pg (= 0.17.1)
   rails (= 4.2.1)
   rails-erd

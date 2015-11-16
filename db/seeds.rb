@@ -6,39 +6,39 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Bikeroute.delete_all
-routes = Bikeroute.create([
-  {
-    name: 'The Wiggle',
-    description: "Lorem ipsum de wolf vos col de perjuret feed zone randonneur, forest of arenberg hinault operacion puerto an festina. Soigneur echelon, stijn devolder mmmaiko nokere koerse ventoux ghent arrivere, cutters danseuse van steenbergen garin! Bromont res firma mitescere nescit van summeren, ombregt rouleur derby cycles goff venga venga venga omloop het volk on the rivet.\nTopsport vlaanderen van steenbergen once! Pedal bettini taaienberg schleck, bosberg monte paschi eroica echelon play rouleur derby paris-roubaix virenque, muur belleville. Ronde van belgie horizontally stiff but vertically compliant bartali longo bianchi, petacchi vuelta a espana berg ter stene de vlaeminck bronzini vendee. Kuurne-brussels-kuurne alpe d\'huez indurain cog petacchi omnium.",
-    lane_type: 'Sharrows',
-    grade: '2',
-    distance: '0.7',
-    twitter_tag: 'TheWiggleCRSF',
-    twitter_search:'<a class="twitter-timeline" href="https://twitter.com/hashtag/TheWiggleCRSF" data-widget-id="611617017599135744">#TheWiggleCRSF Tweets</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>',
-    map:'https://www.dropbox.com/s/ea274rjll62ky5s/thewiggle.png?raw=1'
-  },
-  {
-    name: 'Market Street',
-    description: 'Castro to the Ferry Building',
-    lane_type: 'Dedicated Lane',
-    grade: '1',
-    distance: '3'
-  },
-  {
-    name: 'The Embarcadero',
-    description: 'Ferry Building to Pier 39',
-    lane_type: 'Separated Lane',
-    grade: '0',
-    distance: '2'
-  },
-  {
-    name: 'The Panhandle',
-    description: 'Haight to Golden Gate Park',
-    lane_type: 'Bike Path',
-    grade: '3',
-    distance: '1'
-  }
-])
+# routes = Bikeroute.create([
+#   {
+#     name: 'The Wiggle',
+#     description: "Lorem ipsum de wolf vos col de perjuret feed zone randonneur, forest of arenberg hinault operacion puerto an festina. Soigneur echelon, stijn devolder mmmaiko nokere koerse ventoux ghent arrivere, cutters danseuse van steenbergen garin! Bromont res firma mitescere nescit van summeren, ombregt rouleur derby cycles goff venga venga venga omloop het volk on the rivet.\nTopsport vlaanderen van steenbergen once! Pedal bettini taaienberg schleck, bosberg monte paschi eroica echelon play rouleur derby paris-roubaix virenque, muur belleville. Ronde van belgie horizontally stiff but vertically compliant bartali longo bianchi, petacchi vuelta a espana berg ter stene de vlaeminck bronzini vendee. Kuurne-brussels-kuurne alpe d\'huez indurain cog petacchi omnium.",
+#     lane_type: 'Sharrows',
+#     grade: '2',
+#     distance: '0.7',
+#     twitter_tag: 'TheWiggleCRSF',
+#     twitter_search:'<a class="twitter-timeline" href="https://twitter.com/hashtag/TheWiggleCRSF" data-widget-id="611617017599135744">#TheWiggleCRSF Tweets</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>',
+#     map:'https://www.dropbox.com/s/ea274rjll62ky5s/thewiggle.png?raw=1'
+#   },
+#   {
+#     name: 'Market Street',
+#     description: 'Castro to the Ferry Building',
+#     lane_type: 'Dedicated Lane',
+#     grade: '1',
+#     distance: '3'
+#   },
+#   {
+#     name: 'The Embarcadero',
+#     description: 'Ferry Building to Pier 39',
+#     lane_type: 'Separated Lane',
+#     grade: '0',
+#     distance: '2'
+#   },
+#   {
+#     name: 'The Panhandle',
+#     description: 'Haight to Golden Gate Park',
+#     lane_type: 'Bike Path',
+#     grade: '3',
+#     distance: '1'
+#   }
+# ])
 
 hoods = [
   {
@@ -514,18 +514,21 @@ hoods = [
 Neighborhood.delete_all
 Neighborhood.create(hoods)
 
+AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
 
 
-routes[0].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
-routes[3].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
-routes[0].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
-routes[3].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
-routes[1].neighborhoods << Neighborhood.find_by( name: 'Tenderloin')
-routes[1].neighborhoods << Neighborhood.find_by( name: 'Downtown Union Square')
-routes[1].neighborhoods << Neighborhood.find_by( name: 'Civic Center')
-routes[1].neighborhoods << Neighborhood.find_by( name: 'South Of Market')
-routes[1].neighborhoods << Neighborhood.find_by( name: 'Northern Waterfront')
-routes[2].neighborhoods << Neighborhood.find_by( name: 'Northern Waterfront')
-routes[1].neighborhoods << Neighborhood.find_by( name: 'Financial District')
-routes[2].neighborhoods << Neighborhood.find_by( name: 'Financial District')
-routes[3].neighborhoods << Neighborhood.find_by( name: 'Haight Ashbury')
+# Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
+# Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+# Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Haight Ashbury')
+# routes[3].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
+# routes[0].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+# routes[3].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+# routes[1].neighborhoods << Neighborhood.find_by( name: 'Tenderloin')
+# routes[1].neighborhoods << Neighborhood.find_by( name: 'Downtown Union Square')
+# routes[1].neighborhoods << Neighborhood.find_by( name: 'Civic Center')
+# routes[1].neighborhoods << Neighborhood.find_by( name: 'South Of Market')
+# routes[1].neighborhoods << Neighborhood.find_by( name: 'Northern Waterfront')
+# routes[2].neighborhoods << Neighborhood.find_by( name: 'Northern Waterfront')
+# routes[1].neighborhoods << Neighborhood.find_by( name: 'Financial District')
+# routes[2].neighborhoods << Neighborhood.find_by( name: 'Financial District')
+# routes[3].neighborhoods << Neighborhood.find_by( name: 'Haight Ashbury')
