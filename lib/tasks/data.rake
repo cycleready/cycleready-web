@@ -7,6 +7,8 @@ namespace :data do
     data_hash = JSON.parse(file)
     # puts data_hash
     data_hash.each do |record|
+      # puts record["geojson"].to_json
+      record["geojson"] = record["geojson"].to_json
       new_record = Bikeroute.new(record)
       new_record.save
     end
