@@ -514,8 +514,9 @@ hoods = [
 Neighborhood.delete_all
 Neighborhood.create(hoods)
 
+AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
 
-# 
+#
 # routes[0].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
 # routes[3].neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
 # routes[0].neighborhoods << Neighborhood.find_by( name: 'Panhandle')
