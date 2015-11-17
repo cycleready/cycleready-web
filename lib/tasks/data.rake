@@ -1,6 +1,7 @@
 namespace :data do
   desc "TODO"
-  task load_data: :environment do
+  task load_routes: :environment do
+    Bikeroute.delete_all
     require 'json'
     Dir.chdir(Rails.root + 'lib/assets')
     file = File.read('routeSeedData.json')
@@ -14,8 +15,7 @@ namespace :data do
     end
   end
   task connect_routes_to_neighborhoods: :environment do
-    Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Alamo Square')
-    Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Panhandle')
+    Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Western Addition')
     Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Haight Ashbury')
 
   end
