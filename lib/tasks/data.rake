@@ -14,7 +14,7 @@ namespace :data do
       new_record.save
     end
   end
-  task connect_routes_to_neighborhoods: :environment do
+  task connect: :environment do
     Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Western Addition')
     Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Haight Ashbury')
 
