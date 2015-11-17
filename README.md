@@ -39,7 +39,8 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Switch to the `develop` branch* `$ git checkout develop` if you're not already there.
 
-*Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`
+*Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`, `$rake data:load_routes`, and `$rake data:connect_routes_to_neighborhoods`
+
 
 *Start the rails server* by typing `$ rails s` 
 
