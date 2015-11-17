@@ -1,4 +1,5 @@
-var dataPath = '/data/sf-neighborhoods.json';
+var dataPath = '/data/planning_neighborhoods_simple.topojson';
+// var dataPath = '/data/sf-neighborhoods.json';
 
 
 var margin = {top: 10, left: 10, bottom: 10, right: 10}
