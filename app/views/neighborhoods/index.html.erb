@@ -1,6 +1,6 @@
 <% provide(:title, "All Neighborhoods") %>
 <p id="notice"><%= notice %></p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+<script src='//d3js.org/d3.v3.min.js' charset="utf-8"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js" charset="utf-8"></script>
 
 <div class="row">
@@ -17,7 +17,7 @@
           <div id="selected-title">Neighborhood: <span id='selected-neighborhood'>San Francisco</span></div>
           <div id='selected-title-routes'></div>
         </div>
-        <%= javascript_include_tag 'mapping', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'neighborhoodMap', 'data-turbolinks-track' => true %>
 
         <div class="list-group">
           <% @neighborhoods.each do |neighborhood| %>

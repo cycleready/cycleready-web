@@ -13,7 +13,7 @@ ActiveAdmin.register Bikeroute do
 #   permitted
 # end
 
-  permit_params :name, :description, :lane_type, :grade, :distance, :map, :twitter_tag, :twitter_search, neighborhood_ids: [], neighborhoods: [:id, :name]
+  permit_params :name, :description, :lane_type, :grade, :distance, :map, :elevation, :geojson, :twitter_tag, :twitter_search, neighborhood_ids: [], neighborhoods: [:id, :name]
 
   index do
     column :name
@@ -35,6 +35,8 @@ ActiveAdmin.register Bikeroute do
       row :grade
       row :distance
       row :map
+      row :geojson
+      row :elevation
       row :neighborhoods do |bikeroute|
         bikeroute.neighborhoods.map{ |neighborhood| neighborhood.name }.join(', ')
       end
@@ -50,6 +52,8 @@ ActiveAdmin.register Bikeroute do
       f.input :lane_type
       f.input :grade
       f.input :map
+      f.input :geojson
+      f.input :elevation
       f.input :distance
       f.input :twitter_tag
       f.input :twitter_search

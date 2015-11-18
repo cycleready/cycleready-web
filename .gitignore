@@ -19,3 +19,7 @@
 /project_notes/*
 
 *.env
+node_modules/*
+
+lib/assets/contours.geojson
+lib/assets/beginning.geojson

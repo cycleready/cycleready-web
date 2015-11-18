@@ -1,3 +1,7 @@
+<script src='//d3js.org/d3.v3.min.js' charset="utf-8"></script>
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+<%= stylesheet_link_tag params[:controller], "data-turbolinks-track" => true %>
 <% provide(:title, @bikeroute.name ) %>
 <div class="row">
   <div class="col-md-2 col-xs-0"></div>
@@ -10,7 +14,8 @@
 
         <div class="row">
           <div class="col-md-12">
-            <iframe width='100%' height='200px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/<%= @mapbox_account %>.5449ca9d/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=<%= @mapbox_apikey %>'></iframe>
+            <div id='map'></div>
+            <!-- <iframe width='100%' height='200px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/<%= @mapbox_account %>.5449ca9d/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=<%= @mapbox_apikey %>'></iframe> -->
           </div>
         </div>
 
@@ -39,6 +44,13 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>Elevation Profile:</p>
+            <div id="elev"></div>
           </div>
         </div>
 
@@ -83,3 +95,14 @@
 </div>
 
 <%= render 'layouts/twitter' %>
+
+<script type="text/javascript">
+
+  var routegeojson = (<%= @bikeroute.geojson.html_safe %>),
+      accessToken = '<%= @mapbox_apikey %>';
+
+  //known issue: on initial load the accesstoken does not always load before the map calls for it.
+  var elevationData = <%= @bikeroute.elevation.html_safe %>;
+  console.log(elevationData);
+</script>
+<%= javascript_include_tag params[:controller], "data-turbolinks-track" => true %>

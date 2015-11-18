@@ -1,4 +1,5 @@
-var dataPath = '/data/sf-neighborhoods.json';
+var dataPath = '/data/planning_neighborhoods_simple.topojson';
+// var dataPath = '/data/sf-neighborhoods.json';
 
 
 var margin = {top: 10, left: 10, bottom: 10, right: 10}
@@ -6,13 +7,13 @@ var margin = {top: 10, left: 10, bottom: 10, right: 10}
     , width = width - margin.left - margin.right
     , mapRatio = 1
     , height = width * mapRatio
-    , scaleMultiplier = 300
+    , scaleMultiplier = 350
     ;
 
 var svg = d3.select("#map_container").append("svg")
 
 var projection = d3.geo.mercator()
-    .center([-122.433701, 37.767683])
+    .center([ -122.441, 37.758 ])
     .scale(width*scaleMultiplier)
     .translate([width / 2, height / 2]);
 
@@ -29,12 +30,14 @@ function renderNeighborhoods(){
   d3.json(dataPath, function(error, sf) {
     if (error) return console.error(error);
 
-    var sfneighborhoods = topojson.feature(sf, sf.objects.SFFind_Neighborhoods);
+    var sfneighborhoods = topojson.feature(sf, sf.objects.planning_neighborhoods);
+    // var sfneighborhoods = topojson.feature(sf, sf.objects.SFFind_Neighborhoods);
 
     svg.append("g")
         .attr("class", "neighborhoods")
       .selectAll(".neighborhood")
-        .data(topojson.feature(sf, sf.objects.SFFind_Neighborhoods).features)
+        .data(topojson.feature(sf, sf.objects.planning_neighborhoods).features)
+        // .data(topojson.feature(sf, sf.objects.SFFind_Neighborhoods).features)
       .enter().append('a')
         .attr("xlink:href",function(d) { return 'neighborhoods/' + d.properties.nId || '#'; }) //change property here to change link
       .append("path")
