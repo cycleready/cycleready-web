@@ -24,7 +24,7 @@ d3.select(window).on('resize', resize);
 
 
 
-var margin = {top: 5, right: 5, bottom: 5, left: 5},
+var margin = {top: 10, right: 5, bottom: 5, left: 5},
     width = parseInt(profileEl.style('width')) - margin.left - margin.right,
     height = 80 - margin.top - margin.bottom;
 
@@ -52,6 +52,18 @@ svgframe.append("path")
     .attr("class", "sparkline")
     .attr("d", line);
 
+var beginElev = elevationData[0],
+    endElev = elevationData[elevationData.length -1];
+svgframe.append('text')
+  .attr("class", "begin")
+  .text(beginElev.elev + 'ft')
+  .attr("transform", "translate(" + x(beginElev.dist) + "," + y(beginElev.elev) + ")");
+svgframe.append('text')
+  .attr("class", "end")
+  .attr("text-anchor", "end")
+  .text(endElev.elev + 'ft')
+  .attr("transform", "translate(" + x(endElev.dist) + "," + y(endElev.elev) + ")");
+
 function resize() {
   // adjust things when the window size changes
   width = parseInt(profileEl.style('width'));
@@ -61,4 +73,5 @@ function resize() {
   x.range([0, width]);
   // redraw the line
   d3.select('.sparkline').attr('d', line);
+  d3.select('.end').attr("transform", "translate(" + x(endElev.dist) + "," + y(endElev.elev) + ")")
 }
