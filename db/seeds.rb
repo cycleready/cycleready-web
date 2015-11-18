@@ -46,7 +46,7 @@ simpleHoods=[{name:"Seacliff",slug:"seacliff"},{name:"Haight Ashbury",slug:"haig
 Neighborhood.delete_all
 Neighborhood.create(simpleHoods)
 
-# AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
+AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
 
 
 # Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Alamo Square')

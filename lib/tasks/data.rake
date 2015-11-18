@@ -10,11 +10,12 @@ namespace :data do
     data_hash.each do |record|
       # puts record["geojson"].to_json
       record["geojson"] = record["geojson"].to_json
+      record["elevation"] = record["elevation"].to_json
       new_record = Bikeroute.new(record)
       new_record.save
     end
   end
-  task connect_routes_to_neighborhoods: :environment do
+  task connect: :environment do
     Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Western Addition')
     Bikeroute.find_by( name: 'The Wiggle').neighborhoods << Neighborhood.find_by( name: 'Haight Ashbury')
 
