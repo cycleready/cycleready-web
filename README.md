@@ -73,4 +73,4 @@ We'll review, then merge into `develop`.  When there are enough features, we'll 
 
 [cyleready-stage](https://cycleready-stage.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #16 for links to how it was set up. 
 
-`git push stage develop:master` is the command you're probably looking for.
+`git push stage develop:master` is the command future me is probably looking for.
