@@ -10,6 +10,7 @@ namespace :data do
     data_hash.each do |record|
       # puts record["geojson"].to_json
       record["geojson"] = record["geojson"].to_json
+      record["elevation"] = record["elevation"].to_json
       new_record = Bikeroute.new(record)
       new_record.save
     end
