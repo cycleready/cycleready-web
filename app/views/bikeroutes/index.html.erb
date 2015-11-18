@@ -1,4 +1,6 @@
 <% provide(:title, "All Routes" ) %>
+<script src='//d3js.org/d3.v3.min.js' charset="utf-8"></script>
+<%= stylesheet_link_tag params[:controller], "data-turbolinks-track" => true %>
 
 <div class="row">
   <div class="col-md-2"></div>
@@ -7,29 +9,39 @@
       <div class="panel-heading">
         <h3 class="panel-title">All Bike Routes</h3>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Neighborhoods</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @bikeroutes.each do |bikeroute| %>
+      <div class="panel-body">
+        <div id="map_container"></div>
+        <div id="route-info">
+          <div id="selected-title"> <span id='selected-route'></span></div>
+        </div>
+        <table class="table">
+          <thead>
             <tr>
-              <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
-              <td><%= bikeroute.description[0..50] + '...' %></td>
-              <td>
-                <% bikeroute.neighborhoods.each do |neighborhood| %>
-                  <%= link_to neighborhood.name, neighborhood_path(neighborhood) %><%= "," unless neighborhood == bikeroute.neighborhoods.last %>
-                <% end %>
-              </td>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Neighborhoods</th>
             </tr>
-          <% end %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <% @bikeroutes.each do |bikeroute| %>
+              <tr>
+                <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
+                <td><%= bikeroute.description[0..50] + '...' %></td>
+                <td>
+                  <% bikeroute.neighborhoods.each do |neighborhood| %>
+                    <%= link_to neighborhood.name, neighborhood_path(neighborhood) %><%= "," unless neighborhood == bikeroute.neighborhoods.last %>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <div class="col-md-2"></div>
 </div>
+
+<%= javascript_include_tag 'bikeroutesAll', 'data-turbolinks-track' => true %>
+
+</script>

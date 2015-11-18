@@ -13,3 +13,4 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( neighborhoodMap.js )
 Rails.application.config.assets.precompile += %w( bikeroutes.js )
 Rails.application.config.assets.precompile += %w( bikeroutes.css )
+Rails.application.config.assets.precompile += %w( bikeroutesAll.js )
