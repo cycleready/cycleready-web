@@ -68,3 +68,9 @@ To work on a new feature, create a new branch off of `develop`
 Work on that feature, then create a pull request to `cycleready-web/develop`
 
 We'll review, then merge into `develop`.  When there are enough features, we'll pull `develop` into `master` and it'll deploy to heroku and be live.
+
+##Heroku staging
+
+[cyleready-stage](https://cycleready-stage.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #16 for links to how it was set up. 
+
+`git push stage develop:master` is the command you're probably looking for.
