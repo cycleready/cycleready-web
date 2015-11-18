@@ -6,8 +6,23 @@
   height: 500px;
 }
 
+#map_container{
+  height: auto;
+  width: 100%;
+}
+
 .sparkline {
   fill: none;
   stroke: steelblue;
   stroke-width: 2px;
+}
+
+.route {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.route:hover {
+  stroke: orange;
 }
