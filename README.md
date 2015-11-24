@@ -71,9 +71,9 @@ We'll review, then merge into `develop`.  When there are enough features, we'll 
 
 ##Heroku staging
 
-[cyleready-stage](https://cycleready-stage.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #49 for links to how it was set up.
+[cyleready-dev](https://cycleready-dev.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #49 for links to how it was set up.
 
-`git push stage develop:master` is the command future me is probably looking for.
+`git push dev develop:master` is the command that future me is probably looking for.
 
 ##(to be turned into a proper attribution list)
 probably it is not necessary to keep track of all of these
