@@ -23,7 +23,9 @@ d3.select(window).on('resize', resize);
 
 
 
-
+/**
+  * Draw elevation sparkline
+  */
 var margin = {top: 10, right: 5, bottom: 5, left: 5},
     width = parseInt(profileEl.style('width')) - margin.left - margin.right,
     height = 80 - margin.top - margin.bottom;
