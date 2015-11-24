@@ -13,7 +13,7 @@ ActiveAdmin.register Neighborhood do
 #   permitted
 # end
 
-  permit_params :name, :map, :about, :slug, bikeroute_ids: [], bikeroutes: [:id, :name]
+  permit_params :name, :map, :about, :geojson, :slug, bikeroute_ids: [], bikeroutes: [:id, :name]
 
   around_filter do |controller, action|
     Neighborhood.class_eval do
@@ -52,6 +52,7 @@ ActiveAdmin.register Neighborhood do
       row :map
       row :slug
       row :about
+      row :geojson
       row :bikeroutes do |neighborhood|
         neighborhood.bikeroutes.map{ |bikeroute| bikeroute.name }.join(', ')
       end
@@ -66,6 +67,7 @@ ActiveAdmin.register Neighborhood do
       f.input :map
       f.input :slug
       f.input :about
+      f.input :geojson
       f.input :bikeroutes, :as => :check_boxes
     end
     f.actions
