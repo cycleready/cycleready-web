@@ -8,7 +8,7 @@ When you first start biking in San Francisco, you probably rely heavily on Googl
 ##Helping Out
 This is a project of the Code for America [San Francisco Brigade](https://github.com/sfbrigade).  Go ahead and make a fork and hack away!
 
-###Do you know about ... 
+###Do you know about ...
 * [Ruby on Rails](http://rubyonrails.org/)?
 * [Bootstrap](http://getbootstrap.com) (especially mobile-oriented)?
 * Maps (especially [Mapbox](http://www.mapbox.com))?
@@ -39,10 +39,10 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Switch to the `develop` branch* `$ git checkout develop` if you're not already there.
 
-*Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`, `$rake data:load_routes`, and `$rake data:connect_routes_to_neighborhoods`
+*Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`, `$rake data:init_hoods`, and `$rake data:init_routes`
 
 
-*Start the rails server* by typing `$ rails s` 
+*Start the rails server* by typing `$ rails s`
 
 *Open your browser* and go to [http://localhost:3000](http://localhost:3000)
 
@@ -53,7 +53,7 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Go to your local repo* `$ cd path/to/my/local/cycleready`
 
-*Start the rails server* `$ rails s` 
+*Start the rails server* `$ rails s`
 
 *Open your browser* to [http://localhost:3000](http://localhost:3000)
 
@@ -71,7 +71,7 @@ We'll review, then merge into `develop`.  When there are enough features, we'll 
 
 ##Heroku staging
 
-[cyleready-stage](https://cycleready-stage.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #49 for links to how it was set up. 
+[cyleready-stage](https://cycleready-stage.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #49 for links to how it was set up.
 
 `git push stage develop:master` is the command future me is probably looking for.
 

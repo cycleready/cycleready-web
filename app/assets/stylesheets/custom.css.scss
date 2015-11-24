@@ -157,3 +157,18 @@ color:green;
   color: darkgrey;
 }
 
+.city-outline {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.route {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.route:hover {
+  stroke: orange;
+}

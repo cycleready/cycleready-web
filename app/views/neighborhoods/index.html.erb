@@ -12,12 +12,12 @@
       </div>
       <div class="panel-body">
 
-        <div id="map_container"></div>
+        <div id="map-container"></div>
         <div id="neighborhood-info">
           <div id="selected-title">Neighborhood: <span id='selected-neighborhood'>San Francisco</span></div>
           <div id='selected-title-routes'></div>
         </div>
-        <%= javascript_include_tag 'neighborhoodMap', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'neighborhoodsMap', 'data-turbolinks-track' => true %>
 
         <div class="list-group">
           <% @neighborhoods.each do |neighborhood| %>

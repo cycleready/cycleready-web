@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151118024931) do
+ActiveRecord::Schema.define(version: 20151124185239) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -89,6 +89,7 @@ ActiveRecord::Schema.define(version: 20151118024931) do
     t.datetime "updated_at", null: false
     t.text     "about"
     t.string   "slug"
+    t.text     "geojson"
   end
 
   add_index "neighborhoods", ["slug"], name: "index_neighborhoods_on_slug"
