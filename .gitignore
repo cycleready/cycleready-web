@@ -21,5 +21,4 @@
 *.env
 node_modules/*
 
-lib/assets/contours.geojson
-lib/assets/beginning.geojson
+lib/assets/data/contours.geojson
