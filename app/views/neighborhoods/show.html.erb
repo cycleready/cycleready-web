@@ -8,7 +8,7 @@
   <div class="col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%= @neighborhood.name %></h3>
+        <h3 class="panel-title"><%= image_tag "ic_location_city_black_24px.svg"%> <%= @neighborhood.name %></h3>
       </div>
       <div class="panel-body">
         <div class="row">
@@ -42,7 +42,7 @@
               <div class="list-group">
                 <% @neighborhood.bikeroutes.each do |bikeroute| %>
                   <%= link_to bikeroute_path(bikeroute), :class=>'list-group-item' do %>
-                    <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> <%= bikeroute.name %></h4>
+                    <h4 class="list-group-item-heading"><%= image_tag "ic_directions_bike_black_24px.svg"%> <%= bikeroute.name %></h4>
                     <p class="list-group-item-text">
                       <%= bikeroute.description[0..24] + '...' %>
                     </p>
