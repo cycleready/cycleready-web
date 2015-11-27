@@ -3,8 +3,7 @@
 <%= stylesheet_link_tag params[:controller], "data-turbolinks-track" => true %>
 
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title"><%= image_tag "ic_directions_bike_black_24px.svg"%> All Bike Routes</h3>
@@ -39,7 +38,6 @@
       </div>
     </div>
   </div>
-  <div class="col-md-2"></div>
 </div>
 
 <%= javascript_include_tag 'bikeroutesAll', 'data-turbolinks-track' => true %>
