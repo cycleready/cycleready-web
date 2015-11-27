@@ -10,8 +10,13 @@ module ApplicationHelper
     end
   end
 
-  def is_active?(link_path)
-    current_page?(link_path) ? "active" : ""
+  def is_recognised?(path)
+    recognized =  Rails.application.routes.recognize_path(path)
+    return recognized[:controller] == params[:controller]
+  end
+
+  def is_active?(path)
+    return "active" if current_page?(path) || is_recognised?(path)
   end
 
 end
