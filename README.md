@@ -8,7 +8,7 @@ When you first start biking in San Francisco, you probably rely heavily on Googl
 ##Helping Out
 This is a project of the Code for America [San Francisco Brigade](https://github.com/sfbrigade).  Go ahead and make a fork and hack away!
 
-###Do you know about ... 
+###Do you know about ...
 * [Ruby on Rails](http://rubyonrails.org/)?
 * [Bootstrap](http://getbootstrap.com) (especially mobile-oriented)?
 * Maps (especially [Mapbox](http://www.mapbox.com))?
@@ -39,10 +39,10 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Switch to the `develop` branch* `$ git checkout develop` if you're not already there.
 
-*Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`, `$rake data:load_routes`, and `$rake data:connect_routes_to_neighborhoods`
+*Almost there!*  Your local database isn't set up yet, so run `$ rake db:setup`, `$rake data:init_hoods`, and `$rake data:init_routes`
 
 
-*Start the rails server* by typing `$ rails s` 
+*Start the rails server* by typing `$ rails s`
 
 *Open your browser* and go to [http://localhost:3000](http://localhost:3000)
 
@@ -53,7 +53,7 @@ This is a Ruby on Rails app, if you're not familiar with Rails, here's a few ste
 
 *Go to your local repo* `$ cd path/to/my/local/cycleready`
 
-*Start the rails server* `$ rails s` 
+*Start the rails server* `$ rails s`
 
 *Open your browser* to [http://localhost:3000](http://localhost:3000)
 
@@ -68,3 +68,21 @@ To work on a new feature, create a new branch off of `develop`
 Work on that feature, then create a pull request to `cycleready-web/develop`
 
 We'll review, then merge into `develop`.  When there are enough features, we'll pull `develop` into `master` and it'll deploy to heroku and be live.
+
+##Heroku staging
+
+[cyleready-dev](https://cycleready-dev.herokuapp.com) is the live development version, which you can deploy your local branch to test it out. See @thfield to get added to heroku as a collaborator so you can use it. See issue #49 for links to how it was set up.
+
+`git push dev develop:master` is the command that future me is probably looking for.
+
+##(to be turned into a proper attribution list)
+probably it is not necessary to keep track of all of these
+
+* http://turfjs.org/
+* https://github.com/maxogden/geojson-js-utils
+* https://www.npmjs.com/package/lorem-ipsum
+* http://d3js.org
+* http://getbootstrap.com
+* https://data.sfgov.org/
+* https://www.mapbox.com
+* https://www.google.com/design/icons

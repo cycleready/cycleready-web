@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   version="1.1"
+   id="neighborhood-map"
+   height="100"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="neighborhood-map.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1428"
+     inkscape:window-height="830"
+     id="namedview114"
+     showgrid="false"
+     inkscape:zoom="6.28"
+     inkscape:cx="50"
+     inkscape:cy="62.738854"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="neighborhood-map" />
+  <metadata
+     id="metadata225">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs223" />
+  <xhtml:defs />
+  <g
+     transform="matrix(0.13882634,0,0,0.13882634,-1.6004202,1.635744)"
+     id="g3"
+     class="neighborhoods">
+    <a
+       xlink:href="neighborhoods/seacliff"
+       id="a5"
+       style="fill:#f44336;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#f44336;fill-opacity:1;stroke:none"
+         id="path7"
+         d="m 165.20012,187.68611 -14.21448,2.23356 1.34735,20.1573 -23.03958,1.34006 0.53894,9.99449 -55.106343,3.51755 0.741039,6.70001 -18.593339,-0.83749 1.684179,25.57073 -17.245996,0.66996 -5.591475,-29.9257 10.846114,-20.04476 8.286162,-2.17763 16.639692,-18.6499 27.755274,-2.84782 12.934493,7.64997 22.43327,-5.30471 21.5575,-12.11733 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title9">Seacliff</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/haight-ashbury"
+       id="a11"
+       style="fill:#e91e63;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#e91e63;fill-opacity:1;stroke:none"
+         id="path13"
+         d="m 370.46789,289.46785 -10.44192,0.4466 -24.38691,21.60362 -9.83561,21.10008 -4.5136,8.93091 -16.77442,3.46068 -6.73672,-41.19516 -7.20829,-44.82828 35.0983,-6.02959 34.96356,-5.75053 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title15">Haight Ashbury</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/outer-mission"
+       id="a17"
+       style="fill:#9c27b0;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#9c27b0;fill-opacity:1;stroke:none"
+         id="path19"
+         d="m 292.38934,617.41587 -20.68173,0.0558 28.02475,-29.56397 25.39742,-37.99013 -25.26269,-13.05472 0.4042,-36.15374 -4.44623,-18.91506 33.21202,-2.39932 15.35971,-4.2965 1.41471,-6.91912 8.01669,5.57995 31.46047,8.98355 -13.13659,7.75583 31.12363,-0.16739 -19.67122,25.27514 -33.95305,57.40713 -31.5952,33.35818 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title21">Outer Mission</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/russian-hill"
+       id="a23"
+       style="fill:#03a9f4;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#03a9f4;fill-opacity:1;stroke:none"
+         id="path25"
+         d="m 434.39933,74.093139 5.65884,11.729386 55.10635,48.254415 -15.09025,2.4014 -56.18422,9.10284 -1.68418,-10.16392 -7.61249,-47.863283 -5.1199,-8.880751 13.27133,7.819539 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title27">Russian Hill</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/noe-valley"
+       id="a29"
+       style="fill:#3f51b5;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#3f51b5;fill-opacity:1;stroke:none"
+         id="path31"
+         d="m 414.72812,356.50789 3.50309,47.27293 2.42522,30.07986 -48.36963,4.35274 -20.00805,-21.03869 -1.68418,-10.04539 -17.71757,1.67425 15.89866,-50.17471 13.81027,1.73026 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title33">Noe Valley</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/inner-sunset"
+       id="a35"
+       style="fill:#f44336;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#f44336;fill-opacity:1;stroke:none"
+         id="path37"
+         d="m 304.51543,345.00974 -11.38506,7.98176 -9.0272,29.97206 -22.23116,0.78137 -8.08406,-7.42303 -14.07974,0.61394 1.27997,20.20367 -13.5408,0.66971 -27.75527,1.50686 -5.05254,-90.36582 103.13914,-5.13568 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title39">Inner Sunset</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/downtown-civic-center"
+       id="a41"
+       style="fill:#4caf50;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#4caf50;fill-opacity:1;stroke:none"
+         id="path43"
+         d="m 485.73311,175.73636 0.53894,-0.16753 0,0.0558 0.13474,-0.0558 -0.13474,0 0,-0.16752 6.93882,-0.89345 5.59148,25.18348 -69.72503,68.89746 -8.89246,-56.55757 14.07974,-2.40095 -4.04203,-25.07117 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title45">Downtown-Civic Center</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/diamond-heights"
+       id="a47"
+       style="fill:#00bcd4;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#00bcd4;fill-opacity:1;stroke:none"
+         id="path49"
+         d="m 372.2868,438.21342 -5.92831,16.68507 -11.51979,-2.12048 -1.01051,20.98102 -8.01669,-5.57995 -3.97466,-20.70229 -17.17863,-14.95543 -13.20397,-3.90636 -8.08406,-11.94254 29.50682,-7.86887 17.71757,-1.67425 1.68418,10.04539 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title51">Diamond Heights</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/lakeshore"
+       id="a53"
+       style="fill:#009688;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#009688;fill-opacity:1;stroke:none"
+         id="path55"
+         d="m 220.8454,617.47164 -135.273279,0.61357 -13.945004,-59.24162 -10.576646,-87.70713 27.62054,-0.61379 20.277519,9.03942 25.80163,-1.17176 -0.67368,-17.4095 25.06059,2.17623 61.84306,-4.57568 5.92832,-4.63153 -7.34303,20.92516 -1.54944,19.52915 -3.9073,72.919 6.19778,26.33013 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title57">Lakeshore</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/outer-richmond"
+       id="a59"
+       style="fill:#4caf50;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#4caf50;fill-opacity:1;stroke:none"
+         id="path61"
+         d="m 188.03759,193.15831 3.90729,75.6538 -150.565623,8.93234 -0.06737,-20.71217 17.245996,-0.66996 -1.684179,-25.57073 18.593339,0.83749 -0.741039,-6.70001 55.106346,-3.51755 -0.53894,-9.99449 23.03958,-1.34006 -1.34735,-20.1573 14.21448,-2.23356 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title63">Outer Richmond</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/crocker-amazon"
+       id="a65"
+       style="fill:#8bc34a;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#8bc34a;fill-opacity:1;stroke:none"
+         id="path67"
+         d="m 434.8709,616.8023 -142.48156,0.61357 25.66689,-11.0444 31.5952,-33.35818 31.3931,17.29305 29.57419,10.8775 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title69">Crocker Amazon</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/excelsior"
+       id="a71"
+       style="fill:#cddc39;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#cddc39;fill-opacity:1;stroke:none"
+         id="path73"
+         d="m 349.65143,573.01329 33.95305,-57.40713 19.67122,-25.27514 22.568,1.84129 33.95305,-3.01303 35.36777,-17.07423 13.81027,25.2763 10.10507,33.3087 -42.10448,14.28228 -53.42216,14.56071 -9.29667,-6.7503 -1.81892,24.4902 -21.15329,-5.13221 -10.23981,18.18561 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title75">Excelsior</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/parkside"
+       id="a77"
+       style="fill:#ffeb3b;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ffeb3b;fill-opacity:1;stroke:none"
+         id="path79"
+         d="m 226.90845,453.94985 -5.92832,4.63153 -61.84306,4.57568 -25.06059,-2.17623 0.67368,17.4095 -25.80163,1.17176 -20.277519,-9.03942 -27.62054,0.61379 -3.772561,-53.40366 143.0205,-8.37113 -0.6063,-10.04559 27.75527,-1.50686 -4.24413,10.32467 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title81">Parkside</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/financial-district"
+       id="a83"
+       style="fill:#ffc107;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ffc107;fill-opacity:1;stroke:none"
+         id="path85"
+         d="m 569.26841,168.70035 -50.32328,50.92446 -20.14278,-19.93347 -5.59148,-25.18348 3.50309,-0.50257 0.67368,-0.16753 9.16193,-1.50771 -4.3115,-26.9164 -1.14524,-8.09762 -0.47157,-4.13264 34.96356,-7.37184 13.27133,13.51494 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title87">Financial District</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/ocean-view"
+       id="a89"
+       style="fill:#ff9800;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ff9800;fill-opacity:1;stroke:none"
+         id="path91"
+         d="m 271.70761,617.47164 -50.86221,0 -0.53894,-23.81835 -6.19778,-26.33013 3.9073,-72.919 13.5408,8.25776 12.39556,16.4592 17.4481,7.64353 38.46665,10.09817 25.26269,13.05472 -25.39742,37.99013 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title93">Ocean View</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/mission"
+       id="a95"
+       style="fill:#ff5722;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ff5722;fill-opacity:1;stroke:none"
+         id="path97"
+         d="m 418.23121,403.78082 -3.50309,-47.27293 -4.98517,-69.94295 14.82077,-13.45412 2.42522,7.81573 66.76087,9.2112 8.623,16.02139 -5.25464,34.72011 9.90297,9.48889 4.44623,17.41433 -2.89678,27.68274 -17.0439,5.41354 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title99">Mission</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/west-of-twin-peaks"
+       id="a101"
+       style="fill:#795548;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#795548;fill-opacity:1;stroke:none"
+         id="path103"
+         d="m 299.86709,536.86282 -38.46665,-10.09817 -17.4481,-7.64353 -12.39556,-16.4592 -13.5408,-8.25776 1.54944,-19.52915 7.34303,-20.92516 -3.7052,-45.81596 4.24413,-10.32467 13.5408,-0.66971 -1.27997,-20.20367 14.07974,-0.61394 8.08406,7.42303 9.97034,22.99375 31.52783,9.93378 8.08406,11.94254 13.20397,3.90636 17.17863,14.95543 3.97466,20.70229 -1.41471,6.91912 -15.35971,4.2965 -33.21202,2.39932 4.44623,18.91506 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title105">West of Twin Peaks</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/inner-richmond"
+       id="a107"
+       style="fill:#9e9e9e;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#9e9e9e;fill-opacity:1;stroke:none"
+         id="path109"
+         d="m 325.66872,252.95671 -35.0983,6.02959 -44.26023,6.8111 -54.36531,3.01471 -3.90729,-75.6538 55.24108,-1.28429 13.60817,-10.27442 0.26946,12.45212 14.01238,-0.67006 1.54944,30.43073 49.11067,-6.3093 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title111">Inner Richmond</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/marina"
+       id="a113"
+       style="fill:#607d8b;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#607d8b;fill-opacity:1;stroke:none"
+         id="path115"
+         d="m 340.8937,86.213499 30.85416,-2.960238 0.53894,1.954876 6.66935,2.569252 0.4042,3.295321 7.61249,-7.596034 22.50064,-4.80345 5.1199,8.880751 7.61249,47.863283 -97.54766,15.41332 -4.78307,-36.97063 -5.45674,-1.95474 4.78307,-27.088047 23.78061,-4.021475 0,0.446832 -1.68418,-0.893666 -20.27752,7.596095 1.01051,5.80868 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title117">Marina</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/bayview"
+       id="a119"
+       style="fill:#2196f3;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#2196f3;fill-opacity:1;stroke:none"
+         id="path121"
+         d="m 574.45568,404.05986 -20.95119,-3.6834 10.84611,9.5991 60.83256,-2.45556 14.68604,8.92924 21.9617,28.90703 -27.21634,3.45978 5.92831,6.52885 21.82697,-0.27901 -23.78061,6.97515 -10.44192,-7.08675 -0.26947,30.35498 14.34921,-7.92332 15.09025,11.99652 15.22498,-0.55797 13.67553,10.71288 21.08593,7.42073 -4.44623,14.39471 -15.49445,4.46337 -9.29667,16.79299 19.53648,14.505 -14.88815,-3.6262 0.4042,11.04586 -12.39555,11.04556 -9.29667,-8.98146 -26.34057,-6.41546 -13.5408,-29.12189 -16.63969,13.22227 -25.33006,-12.77594 17.8523,13.11068 -1.95364,8.81459 29.97839,22.37035 -16.90916,25.32552 2.96415,15.228 -27.62054,-8.42274 -9.09457,6.97248 -14.68604,-5.46642 -14.95551,6.91668 -2.82942,-16.45519 -12.39556,-22.81528 -10.84612,-46.41554 -10.10507,-33.3087 -13.81027,-25.2763 -5.79358,-16.74015 3.23363,-20.87037 10.17244,-16.74173 5.79358,-22.26759 89.59833,-6.41821 11.11559,-7.98104 16.50495,-1.06043 1.34735,19.08732 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title123">Bayview</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/visitacion-valley"
+       id="a125"
+       style="fill:#e91e63;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#e91e63;fill-opacity:1;stroke:none"
+         id="path127"
+         d="m 545.15096,616.35606 -110.28006,0.44624 -24.25218,-15.61846 -29.57419,-10.8775 10.23981,-18.18561 21.15329,5.13221 1.81892,-24.4902 9.29667,6.7503 53.42216,-14.56071 42.10448,-14.28228 10.84612,46.41554 12.39556,22.81528 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title129">Visitacion Valley</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/pacific-heights"
+       id="a131"
+       style="fill:#9c27b0;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#9c27b0;fill-opacity:1;stroke:none"
+         id="path133"
+         d="m 324.11927,191.20396 -3.50309,-23.67629 4.04203,-16.69709 97.54766,-15.41332 1.68418,10.16392 4.64834,28.92668 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title135">Pacific Heights</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/presidio"
+       id="a137"
+       style="fill:#673ab7;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#673ab7;fill-opacity:1;stroke:none"
+         id="path139"
+         d="m 319.20147,84.817163 -4.78307,27.088047 5.45674,1.95474 4.78307,36.97063 -4.04203,16.69709 -63.72934,14.07193 -13.60817,10.27442 -55.24108,1.28429 -22.83747,-5.4722 -9.0272,-14.07171 7.88196,-11.95017 17.78493,-46.91069 9.8356,-37.867659 0.67368,-13.461198 7.20828,6.982006 23.51115,5.697226 14.1471,13.85174 15.49445,6.143763 38.73612,-8.545441 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title141">Presidio</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/nob-hill"
+       id="a143"
+       style="fill:#3f51b5;fill-opacity:1;stroke:none;stroke-opacity:1">
+      <path
+         style="fill:#3f51b5;fill-opacity:1;stroke:none;stroke-opacity:1"
+         id="path145"
+         d="m 430.22257,184.55911 -1.68418,-10.05125 -4.64834,-28.92668 56.18422,-9.10284 6.19778,38.92297 0,0.16752 0,0.0558 -0.53894,0.11169 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title147">Nob Hill</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/outer-sunset"
+       id="a149"
+       style="fill:#2196f3;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#2196f3;fill-opacity:1;stroke:none"
+         id="path151"
+         d="m 199.69211,399.31608 0.6063,10.04559 -143.0205,8.37113 -13.136599,-100.29767 150.498259,-8.48487 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title153">Outer Sunset</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/western-addition"
+       id="a155"
+       style="fill:#03a9f4;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#03a9f4;fill-opacity:1;stroke:none"
+         id="path157"
+         d="m 429.07732,268.5888 -4.5136,4.52202 -14.82077,13.45412 -39.27506,2.90291 -9.83561,-42.26167 -34.96356,5.75053 -3.83993,-35.45362 2.29048,-26.29913 104.41912,-16.6961 1.68418,10.05125 4.04203,25.07117 -14.07974,2.40095 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title159">Western Addition</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/golden-gate-park"
+       id="a161"
+       style="fill:#00bcd4;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#00bcd4;fill-opacity:1;stroke:none"
+         id="path163"
+         d="m 290.57042,258.9863 7.20829,44.82828 -103.13914,5.13568 -150.498259,8.48487 -2.762054,-39.69068 150.565623,-8.93234 54.36531,-3.01471 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title165">Golden Gate Park</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/presidio-heights"
+       id="a167"
+       style="fill:#009688;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#009688;fill-opacity:1;stroke:none"
+         id="path169"
+         d="m 256.88684,181.5996 63.72934,-14.07193 3.50309,23.67629 -2.29048,26.29913 -49.11067,6.3093 -1.54944,-30.43073 -14.01238,0.67006 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title171">Presidio Heights</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/south-of-market"
+       id="a173"
+       style="fill:#673ab7;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#673ab7;fill-opacity:1;stroke:none"
+         id="path175"
+         d="m 588.40068,299.85114 -86.02787,6.308 -8.623,-16.02139 -66.76087,-9.2112 -2.42522,-7.81573 4.5136,-4.52202 69.72503,-68.89746 20.14278,19.93347 50.32328,-50.92446 8.15142,22.55945 12.26083,-0.83758 0.74104,9.21328 -12.86713,0.94924 0.2021,38.63755 -13.1366,6.53228 23.10694,4.3548 -8.15143,10.83095 21.69223,-1.50739 1.54945,14.57113 -22.568,-7.36924 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title177">South of Market</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/glen-park"
+       id="a179"
+       style="fill:#8bc34a;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#8bc34a;fill-opacity:1;stroke:none"
+         id="path181"
+         d="m 420.65643,433.86068 1.07787,12.72326 -11.11558,19.13994 -25.33006,17.0187 -31.46047,-8.98355 1.01051,-20.98102 11.51979,2.12048 5.92831,-16.68507 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title183">Glen Park</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/potrero-hill"
+       id="a185"
+       style="fill:#cddc39;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#cddc39;fill-opacity:1;stroke:none"
+         id="path187"
+         d="m 609.28451,381.06596 -11.11559,7.98104 -89.59833,6.41821 2.89678,-27.68274 -4.44623,-17.41433 -9.90297,-9.48889 5.25464,-34.72011 86.02787,-6.308 -7.54512,17.36071 23.24167,20.20669 1.54945,26.68019 -13.94501,1.33954 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title189">Potrero Hill</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/castro-upper-market"
+       id="a191"
+       style="fill:#ffeb3b;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ffeb3b;fill-opacity:1;stroke:none"
+         id="path193"
+         d="m 325.80345,332.61815 9.83561,-21.10008 24.38691,-21.60362 10.44192,-0.4466 39.27506,-2.90291 4.98517,69.94295 -52.14219,3.85125 -13.81027,-1.73026 -23.24168,-14.34477 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title195">Castro-Upper Market</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/twin-peaks"
+       id="a197"
+       style="fill:#ffc107;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ffc107;fill-opacity:1;stroke:none"
+         id="path199"
+         d="m 261.87201,383.74493 22.23116,-0.78137 9.0272,-29.97206 11.38506,-7.98176 16.77442,-3.46068 4.5136,-8.93091 -0.26947,11.66596 23.24168,14.34477 -15.89866,50.17471 -29.50682,7.86887 -31.52783,-9.93378 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title201">Twin Peaks</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/bernal-heights"
+       id="a203"
+       style="fill:#ff9800;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ff9800;fill-opacity:1;stroke:none"
+         id="path205"
+         d="m 403.2757,490.33102 -31.12363,0.16739 13.13659,-7.75583 25.33006,-17.0187 11.11558,-19.13994 -1.07787,-12.72326 -2.42522,-30.07986 73.29548,-2.90207 17.0439,-5.41354 -5.79358,22.26759 -10.17244,16.74173 -3.23363,20.87037 5.79358,16.74015 -35.36777,17.07423 -33.95305,3.01303 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title207">Bernal Heights</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/chinatown"
+       id="a209"
+       style="fill:#ff5722;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#ff5722;fill-opacity:1;stroke:none"
+         id="path211"
+         d="m 486.40679,175.56883 -0.13474,0 0,-0.16752 -6.19778,-38.92297 15.09025,-2.4014 5.45674,-0.89355 0.47157,4.13264 1.14524,8.09762 4.3115,26.9164 -9.16193,1.50771 -0.67368,0.16753 -3.50309,0.50257 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title213">Chinatown</title>
+      </path>
+    </a>
+    <a
+       xlink:href="neighborhoods/north-beach"
+       id="a215"
+       style="fill:#795548;fill-opacity:1;stroke:none">
+      <path
+         style="fill:#795548;fill-opacity:1;stroke:none"
+         id="path217"
+         d="m 478.39009,69.959844 3.63783,1.787376 1.75155,1.899078 28.02474,16.309357 10.23981,-6.702394 -2.35785,19.995139 15.89865,22.56315 -34.96356,7.37184 -5.45674,0.89355 -55.10635,-48.254415 -5.65884,-11.729386 19.73858,3.74227 -18.12177,-16.142283 42.77816,13.126128 z"
+         class="neighborhood"
+         inkscape:connector-curvature="0">
+        <title
+           id="title219">North Beach</title>
+      </path>
+    </a>
+  </g>
+  <g
+     transform="matrix(0.13911047,0,0,0.13911047,-1.7644564,1.6110445)"
+     class="routes"
+     id="g4348"
+     style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round">
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 549.61364,148.21676 -3.84172,4.144 -104.25513,103.90958 -44.19043,44.64691 -23.69842,22.50766"
+       id="path4350"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 170.05945,198.99394 4.02507,70.99951 6.03759,-0.27511 -1.36869,3.75436"
+       id="path4352"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 465.62453,401.14827 -8.41681,-108.96906 0.0469,-4.66576 0.82292,-4.15877 1.78228,-3.88911 1.78655,-2.8373 6.81362,-7.22819 97.76131,-98.03576"
+       id="path4354"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 274.45103,253.708 54.505143,266.61126"
+       id="path4356"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 510.04521,192.0449 54.89267,55.07644 1.65011,3.47406 12.16899,167.88917 -25.98383,93.04778 -14.45868,41.81537"
+       id="path4358"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 348.88061,265.34901 -1.66716,0.2751 -1.04464,0.76599 -1.54351,0.53942 -3.7735,0.79835 -1.71406,-0.25892 -1.80787,0.19419 -1.8505,0.22656 -1.69275,0.48009 -1.97842,-0.0108 -3.44518,0.51245 -1.4156,0.1834 -1.32605,1.14358 -2.51993,-0.31826 -2.62653,0.68506 -2.91646,0.11328 -3.76497,1.89875 -6.33607,-0.29668 -2.40054,0.59336 -4.2681,0.561 -0.76323,-0.739 -7.18457,3.60868"
+       id="path4360"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 470.61323,75.846353 14.68466,2.606664 8.45946,4.074564 10.97938,6.999518 11.57633,10.841731 33.0277,46.47738 7.36365,9.56138 5.99496,6.67988 7.36365,7.365 3.61573,8.00153 2.14898,6.77123 0.36669,7.78002 -1.35164,28.54525 1.18961,2.49242 0.61826,7.15888 0.41359,7.95715"
+       id="path4362"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 316.99562,95.242113 -48.3093,8.510307 -4.75418,3.20548 -27.90683,-4.3927 -3.29168,-6.222188 -2.65637,-7.684774"
+       id="path4364"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 189.639,307.6864 8.32728,152.06256 -4.39175,0.45829 0.54577,1.91942 2.65637,1.09989 1.64584,3.84419 3.29169,0.6362 0.18334,6.68006 -3.0188,0.45827 1.00627,24.70282"
+       id="path4366"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 507.2993,283.71608 63.21995,-63.03415 3.93552,-0.0917"
+       id="path4368"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 242.5234,451.33252 0.91247,7.68318 -2.37923,6.22192 1.10007,15.92099 9.32928,9.88223 3.84599,6.40472 5.48756,2.92738 8.60016,-5.49357 6.40429,0.3666 16.28787,-4.20513 75.02225,0.3666"
+       id="path4370"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 428.34152,402.65815 61.66791,-1.73637 7.04386,-3.01977 7.31675,-1.28342 6.58763,-2.0114 3.56884,0.91673 41.44878,-3.75321 24.97757,-1.55845"
+       id="path4372"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 68.686673,456.82129 157.365517,-8.78315 6.22094,-2.56112 5.67517,2.01115 4.02507,3.47771"
+       id="path4374"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 125.77948,313.36053 9.0564,165.14552"
+       id="path4376"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 490.37186,288.20388 7.41481,98.71889 3.93126,9.87917"
+       id="path4378"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 376.74054,488.48 27.90683,-17.02056 9.60643,-10.06603 4.93752,-7.3165 2.28969,-11.16102 7.86678,-25.6176 -1.27915,-14.18179"
+       id="path4380"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 98.145539,384.72796 216.53957,377.95472"
+       id="path4382"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 567.22756,250.5954 8.87305,-0.26973 1.28342,16.01049 9.69597,25.24972 -6.22094,16.19221 -5.48756,6.59105 7.86678,100.91245"
+       id="path4384"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 270.70312,180.05644 8.23347,-1.27872 0.45623,4.85048 7.04387,-1.00894 1.18961,4.66699 97.44152,-16.01366"
+       id="path4386"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 162.19267,653.34832 -4.6689,-9.15068 -0.17909,-23.14709 3.10834,-7.13572 -0.82292,-8.60183 1.64584,-72.55167 4.66891,-17.38526 -7.13767,-11.52589 -17.01698,-5.58517 -8.32728,7.50438 -9.51689,-3.56888 -12.34808,2.74405 -6.77097,-12.16775 -3.4793,-1.09981"
+       id="path4388"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 411.96412,286.46163 -15.27734,1.23522 -0.48181,-0.24812 -7.04387,0.54479 -1.39427,-8.9433 -7.00123,1.14355 -0.82292,-5.05428 -7.06944,1.14355 -2.37496,-15.12001 -20.70094,3.36604 -0.73338,0.43155"
+       id="path4390"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 177.47001,548.49635 21.68588,1.00801 16.01072,-4.48486 43.18417,-0.18328 0,-1.1913 38.88195,0.27491"
+       id="path4392"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 96.316352,200.82829 10.979388,12.07415 13.17526,5.85891 2.74591,43.72868"
+       id="path4394"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 205.83307,188.02001 0.73338,8.69176 3.56883,61.20386"
+       id="path4396"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 124.67941,489.94103 77.03479,-4.5718 31.29231,17.93106 2.92926,9.14852 8.23348,7.13753 17.01698,7.1374 41.53832,11.34196 32.38813,0.36656 29.09217,-4.75991"
+       id="path4398"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 382.13856,243.82528 363.83816,129.27685"
+       id="path4400"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 560.54613,164.95975 462.1026,262.30662"
+       id="path4402"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 509.76806,146.47929 440.51052,85.819583"
+       id="path4404"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 390.18869,288.02049 2.65637,35.40442"
+       id="path4406"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 249.93396,306.04132 3.01879,57.46057 -1.28341,7.86823 2.01253,4.75646 4.75845,5.21478 2.92925,2.92822 1.91873,3.11156 4.11887,8.14278 4.30221,4.84783 2.01254,4.02275"
+       id="path4408"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 280.21574,607.96471 13.35861,-4.20933 15.73783,-13.90567 20.30867,-10.79609 25.25472,-25.98081 9.32928,-19.94492 7.87105,-19.39604 8.96685,-13.17562 9.69597,-3.66057 -3.84172,-14.276"
+       id="path4410"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 58.073976,346.84813 260.81954,335.31737"
+       id="path4412"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 69.236708,470.35958 21.225392,0.73324 9.51689,5.12728 15.00445,3.28875 103.752,-5.67177"
+       id="path4414"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 317.91235,95.242113 51.05095,-8.229861 10.79604,8.413344 6.95432,-1.095506"
+       id="path4416"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 449.20023,248.79364 -1.57763,-1.35402 -2.92499,-18.4119 -22.53013,-140.277739"
+       id="path4418"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 427.24572,270.36025 10.70223,140.75851"
+       id="path4420"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 160.08633,189.20698 4.66891,82.5234"
+       id="path4422"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 239.04411,194.96912 3.84172,75.20773"
+       id="path4424"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 392.66172,323.42491 72.91591,-5.67399 3.20215,-2.19519 23.42553,-1.55336 53.51971,-3.93196 -0.36669,-6.22434 1.46676,-1.37002 23.51081,-1.46711"
+       id="path4426"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="M 568.32337,231.2018 517.72865,180.33161"
+       id="path4428"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 197.14336,79.483804 -2.65637,-4.366025 -1.02759,-3.157168 -0.27288,-2.881949 -10.40803,-112.077585 -1.37296,-4.847835 -2.60947,-3.84376 -1.44118,-0.939351 -1.42838,-0.307719 -3.13393,-1.840921"
+       id="path4430"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 293.37822,276.19134 -4.46851,2.35723 -1.77376,0.60414 -3.39828,0.11867 -14.4672,-2.57299 -10.09677,-2.03898 -12.1221,-3.91077 -4.14019,-0.57179 -10.06692,0.55021 -2.1703,0.4585 -2.19587,1.09502 -1.39428,0.96017 -6.86478,5.80947 -2.17029,1.00869 -1.67143,0.3668 -1.5563,-0.2751 -9.8111,-4.27752 -1.73964,-0.66348 -1.48382,-0.20497 -1.96989,0.20497 -3.0657,0.61493 -5.12087,1.53733 -9.1971,4.59575 -5.60269,2.12525 -2.58389,0.0917 -1.80786,-0.0216 -4.5751,-0.98171 -0.93805,0.0647 -3.8204,1.05184 -1.59894,0 -1.32605,-0.4531 -6.0845,-3.86754 -1.85477,-0.43692 -1.89741,0.1834 -4.25531,0.52862 -7.84547,-1.03027 -3.65837,0.16183 -3.95684,0.86844 -8.05013,3.2688 -2.58815,-0.31825 -1.94431,0.77674 -2.51567,3.02064 -2.12765,1.09497 -7.79857,2.08207 -15.50758,6.19758 -19.259762,5.78757 -2.059435,-1.8285 -1.986949,-4.23415 -2.97616,-5.44244 -2.720329,-3.24716 -4.187091,-3.33888 -3.999481,-1.87713 -2.519929,-0.29667"
+       id="path4432"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 275.00107,261.9452 -4.75845,-83.80953 3.20215,-2.56285 -0.72912,-4.39195 0,-5.94594 -4.20841,-2.28775 -3.47929,-0.45863 -3.29169,-2.64928"
+       id="path4434"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 132.27331,433.30746 92.58927,-5.2141 26.53387,-2.28624"
+       id="path4436"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 39.270445,238.24726 9.380446,13.31375 0.550036,10.61076 -0.27715,7.36317 4.118869,35.22806 0,12.35148 9.423085,88.47174 5.670906,58.91814 0.230248,5.35381"
+       id="path4438"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+    <path
+       inkscape:connector-curvature="0"
+       class="route"
+       d="m 391.10541,297.26024 65.87206,-5.21588"
+       id="path4440"
+       style="fill:none;stroke:#333333;stroke-opacity:1;stroke-width:5.03197207;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round" />
+  </g>
+</svg>

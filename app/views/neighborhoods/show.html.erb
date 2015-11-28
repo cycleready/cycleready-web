@@ -1,16 +1,36 @@
 <% provide(:title, @neighborhood.name ) %>
 <p id="notice"><%= notice %></p>
+<script src='//d3js.org/d3.v3.min.js' charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js" charset="utf-8"></script>
+
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <%= @neighborhood.name %></h3>
+        <h3 class="panel-title"><%= image_tag "ic_location_city_black_24px.svg"%> <%= @neighborhood.name %></h3>
       </div>
       <div class="panel-body">
         <div class="row">
           <div class="col-md-12">
-            <%= @neighborhood.about || @neighborhood.name + ' is an awesome San Francisco neighborhood!' %></div>
+            <div id="map-container"></div>
+            <span id='selected-route'></span>
+            <script type="text/javascript">
+              var neighborhoodGeojson = <%= raw @neighborhood.geojson %>,
+                  routesInNeighborhoodGeojson = [
+                    <% @neighborhood.bikeroutes.each do |bikeroute| %>
+                      <%=raw bikeroute.geojson %><% if bikeroute != @neighborhood.bikeroutes.last %>,<% end %>
+                    <% end %>
+                  ];
+            </script>
+            <%= javascript_include_tag 'neighborhood', 'data-turbolinks-track' => true %>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>About this Neighborhood</h3>
+            <%= @neighborhood.about || @neighborhood.name + ' is an awesome San Francisco neighborhood!' %>          </div>
         </div>
         <hr>
 
@@ -21,7 +41,7 @@
               <div class="list-group">
                 <% @neighborhood.bikeroutes.each do |bikeroute| %>
                   <%= link_to bikeroute_path(bikeroute), :class=>'list-group-item' do %>
-                    <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> <%= bikeroute.name %></h4>
+                    <h4 class="list-group-item-heading"><%= image_tag "ic_directions_bike_black_24px.svg"%> <%= bikeroute.name %></h4>
                     <p class="list-group-item-text">
                       <%= bikeroute.description[0..24] + '...' %>
                     </p>
@@ -41,5 +61,4 @@
 
     </div>
   </div>
-  <div class="col-md-2"></div>
 </div>

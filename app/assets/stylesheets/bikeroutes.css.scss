@@ -1,3 +1,10 @@
+$crcolor1: #c1c76c;
+$crcolor2: #5b7953;
+$crcolor3: #465037;
+$crcolor4: #fffcdd;
+$crcolor5: #d77e27;
+$crcolor6: #ba5326;
+
 #map {
   // position: absolute;
   // top: 0;
@@ -6,8 +13,13 @@
   height: 500px;
 }
 
-.line {
+#map-container{
+  height: auto;
+  width: 100%;
+}
+
+.sparkline {
   fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
+  stroke: #5b7953;
+  stroke-width: 2px;
 }

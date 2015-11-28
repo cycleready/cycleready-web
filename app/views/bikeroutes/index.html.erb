@@ -1,35 +1,43 @@
 <% provide(:title, "All Routes" ) %>
+<script src='//d3js.org/d3.v3.min.js' charset="utf-8"></script>
+<%= stylesheet_link_tag params[:controller], "data-turbolinks-track" => true %>
 
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">All Bike Routes</h3>
+        <h3 class="panel-title"><%= image_tag "ic_directions_bike_black_24px.svg"%> All Bike Routes</h3>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Neighborhoods</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @bikeroutes.each do |bikeroute| %>
+      <div class="panel-body">
+        <div id="map-container"></div>
+        <div id="route-info">
+          <div id="selected-title"> <span id='selected-route'></span></div>
+        </div>
+        <table class="table">
+          <thead>
             <tr>
-              <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
-              <td><%= bikeroute.description[0..50] + '...' %></td>
-              <td>
-                <% bikeroute.neighborhoods.each do |neighborhood| %>
-                  <%= link_to neighborhood.name, neighborhood_path(neighborhood) %><%= "," unless neighborhood == bikeroute.neighborhoods.last %>
-                <% end %>
-              </td>
+              <th><%= image_tag "ic_directions_bike_black_24px.svg"%> Name</th>
+              <th>Description</th>
+              <th><%= image_tag "ic_location_city_black_24px.svg"%>  Neighborhoods</th>
             </tr>
-          <% end %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <% @bikeroutes.each do |bikeroute| %>
+              <tr>
+                <td><%= link_to bikeroute.name, bikeroute_path(bikeroute) %></td>
+                <td><%= bikeroute.description[0..50] + '...' %></td>
+                <td>
+                  <% bikeroute.neighborhoods.each do |neighborhood| %>
+                    <%= link_to neighborhood.name, neighborhood_path(neighborhood) %><%= "," unless neighborhood == bikeroute.neighborhoods.last %>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-  <div class="col-md-2"></div>
 </div>
+
+<%= javascript_include_tag 'bikeroutesAll', 'data-turbolinks-track' => true %>
