@@ -69,8 +69,9 @@ function resize() {
       .style('height', height + 'px');
 
   // resize the map
-  svg.select('.neighborhoods').attr('d', path);
-  svg.selectAll('.neighborhood').attr('d', path);
+  svg.select('.routes').attr('d', path);
+  svg.select('.city-outline').attr('d', path);
+  svg.selectAll('.route').attr('d', path);
 }
 
 function setTitle(newTitle){
